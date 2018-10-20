@@ -3,6 +3,7 @@ author: Suche
 email: info@suche.cz
 description: > # this means to ignore newlines until "twitter_username:"
   Suche.cz - Sucheho osobní stránky.
+lang: cs
 
 # social links
 # twitter_username: jekyllrb
