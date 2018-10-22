@@ -3,7 +3,17 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <span class="site-title">
+      <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      / <select id="nav-select" title="Navigace">
+        <option value="/">Úvod</option>
+        <option value="enviroment">Svět</option>
+        <option value="it">IT</option>
+        <option value="kalistenika">Kalistenika</option>
+      </select>
+    </span>
+
+
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -17,6 +27,10 @@
         </label>
 
         <div class="trigger">
+          <span class="btn" id="btn-settings">
+            <i class="material-icons">settings</i>
+          </span>
+
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
@@ -28,3 +42,29 @@
     {%- endif -%}
   </div>
 </header>
+<script>
+
+  (function() {
+
+    var btnSettings = document.getElementById('btn-settings');
+    btnSettings.addEventListener('click', function () {
+      console.log('click settings');
+    });
+
+    var navSelect = document.getElementById('nav-select');
+    var sekce = location.pathname.split('/')[1];
+    var options = navSelect.querySelectorAll('option');
+    for (var i=0; i<options.length; i++) {
+      if (options[i].value === sekce) {
+        navSelect.selectedIndex = i;
+      }
+    }
+    navSelect.addEventListener('change', function () {
+      location = navSelect.value;
+    })
+
+
+
+
+  })();
+</script>
