@@ -7,9 +7,9 @@
       <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
       / <select id="nav-select" title="Navigace">
         <option value="/">Úvod</option>
-        <option value="enviroment">Svět</option>
-        <option value="it">IT</option>
-        <option value="kalistenika">Kalistenika</option>
+        {% for section in site.sections %}
+          <option value="{{ section.url }}">{{ section.title }}</option>
+        {% endfor %}
       </select>
     </span>
 
@@ -55,7 +55,7 @@
     var sekce = location.pathname.split('/')[1];
     var options = navSelect.querySelectorAll('option');
     for (var i=0; i<options.length; i++) {
-      if (options[i].value === sekce) {
+      if (options[i].value === '/'+sekce) {
         navSelect.selectedIndex = i;
       }
     }

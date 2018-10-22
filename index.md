@@ -7,3 +7,12 @@
 #
 layout: home
 ---
+
+<ul>
+  {% for section in site.sections %}
+    <li>
+      <a href="{{ section.url }}">{{ section.title }}</a>
+      - {{ section.title }}
+    </li>
+  {% endfor %}
+</ul>

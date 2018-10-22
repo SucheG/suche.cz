@@ -48,6 +48,8 @@ plugins:
 
 google_analytics: UA-127766964-1
 
+# pokud přidáváme kolekci je potřeba restart server
 collections:
-  animals:
+  sections:
     output: true
+    permalink: /:name
