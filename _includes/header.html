@@ -46,11 +46,6 @@
 
   (function() {
 
-    var btnSettings = document.getElementById('btn-settings');
-    btnSettings.addEventListener('click', function () {
-      console.log('click settings');
-    });
-
     var navSelect = document.getElementById('nav-select');
     var sekce = location.pathname.split('/')[1];
     var options = navSelect.querySelectorAll('option');
@@ -68,3 +63,5 @@
 
   })();
 </script>
+
+{%- include nav-modal.html -%}

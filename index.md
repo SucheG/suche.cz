@@ -8,11 +8,39 @@
 layout: home
 ---
 
-<ul>
+<div>
   {% for section in site.sections %}
-    <li>
-      <a href="{{ section.url }}">{{ section.title }}</a>
-      - {{ section.title }}
-    </li>
+  <div class="section-box">
+    <a href="{{ section.url }}">
+      <div>
+        <div>{{ section.title }}</div>
+        <div>
+          <img src="https://via.placeholder.com/350x150?text={{ section.title }} x1">
+          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x2">
+          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x3">
+          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x4">
+          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x5">
+        </div>
+      </div>
+    </a>
+  </div>
   {% endfor %}
-</ul>
+</div>
+
+<script>
+  var sectionBoxes = document.querySelectorAll('.section-box');
+  var tOut;
+  for (var i=0; i<sectionBoxes.length; i++) {
+    
+    sectionBoxes[i].addEventListener('mouseenter' ,function(){
+      tOut = setTimeout(function(){
+        console.log('2 secs on section -> change imgage');
+      }, 2000)
+    })
+    
+    sectionBoxes[i].addEventListener('mouseleave' ,function(){
+      clearTimeout(tOut);
+    })
+    
+  }
+</script>
