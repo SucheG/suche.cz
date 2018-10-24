@@ -20,6 +20,18 @@ body {
 .section-box {
   display: inline-block;
   width: 32%;
+
+  .loader {
+    height: .3rem;
+    background: #069;
+    width: 0;
+
+    &.width100 {
+      width: 100%;
+      -webkit-transition: width 1.9s; /* Safari */
+      transition: width 1.9s;
+    }
+  }
 }
 
 

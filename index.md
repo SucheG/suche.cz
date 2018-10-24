@@ -21,26 +21,11 @@ layout: home
           <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x4">
           <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x5">
         </div>
+        <div class="loader"></div>
       </div>
     </a>
   </div>
   {% endfor %}
 </div>
 
-<script>
-  var sectionBoxes = document.querySelectorAll('.section-box');
-  var tOut;
-  for (var i=0; i<sectionBoxes.length; i++) {
-    
-    sectionBoxes[i].addEventListener('mouseenter' ,function(){
-      tOut = setTimeout(function(){
-        console.log('2 secs on section -> change imgage');
-      }, 2000)
-    })
-    
-    sectionBoxes[i].addEventListener('mouseleave' ,function(){
-      clearTimeout(tOut);
-    })
-    
-  }
-</script>
+<script src="/assets/js/index.js"></script>
