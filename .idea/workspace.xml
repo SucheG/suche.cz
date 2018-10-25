@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36fab717-3a53-4a47-be5d-37f65d316a01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/2018-10-20-auta.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-10-20-auta.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2018-10-25-url.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-10-25-url.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -48,7 +49,7 @@
         <counts>
           <entry key="html" value="1126" />
           <entry key="js" value="819" />
-          <entry key="md" value="2273" />
+          <entry key="md" value="2449" />
           <entry key="scss" value="498" />
           <entry key="yml" value="196" />
         </counts>
@@ -57,7 +58,7 @@
         <counts>
           <entry key="HTML" value="1126" />
           <entry key="JavaScript" value="819" />
-          <entry key="PLAIN_TEXT" value="2273" />
+          <entry key="PLAIN_TEXT" value="2449" />
           <entry key="SCSS" value="498" />
           <entry key="YAML" value="196" />
         </counts>
@@ -123,8 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-10-25-url.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+            <state relative-caret-position="394">
+              <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -132,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-10-20-auta.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="98">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -337,19 +338,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540123910672</updated>
-      <workItem from="1540123914317" duration="33974000" />
+      <workItem from="1540123914317" duration="34575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33974000" />
+    <option name="totallyTimeSpent" value="34575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.122934565" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.12231183" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.26874116" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -569,15 +570,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-10-20-auta.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="98">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-10-25-url.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+        <state relative-caret-position="394">
+          <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
         </state>
       </provider>
     </entry>
