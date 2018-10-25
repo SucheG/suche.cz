@@ -48,7 +48,7 @@
         <counts>
           <entry key="html" value="1126" />
           <entry key="js" value="819" />
-          <entry key="md" value="2503" />
+          <entry key="md" value="2531" />
           <entry key="scss" value="498" />
           <entry key="yml" value="196" />
         </counts>
@@ -57,7 +57,7 @@
         <counts>
           <entry key="HTML" value="1126" />
           <entry key="JavaScript" value="819" />
-          <entry key="PLAIN_TEXT" value="2503" />
+          <entry key="PLAIN_TEXT" value="2531" />
           <entry key="SCSS" value="498" />
           <entry key="YAML" value="196" />
         </counts>
@@ -124,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-10-25-url.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -337,12 +337,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540123910672</updated>
-      <workItem from="1540123914317" duration="34930000" />
+      <workItem from="1540123914317" duration="35377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34930000" />
+    <option name="totallyTimeSpent" value="35377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="840" extended-state="0" />
@@ -577,7 +577,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-10-25-url.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
