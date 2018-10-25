@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36fab717-3a53-4a47-be5d-37f65d316a01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2018-10-25-url.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-10-25-url.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,7 +48,7 @@
         <counts>
           <entry key="html" value="1126" />
           <entry key="js" value="819" />
-          <entry key="md" value="2599" />
+          <entry key="md" value="3099" />
           <entry key="scss" value="498" />
           <entry key="yml" value="196" />
         </counts>
@@ -58,7 +57,7 @@
         <counts>
           <entry key="HTML" value="1126" />
           <entry key="JavaScript" value="819" />
-          <entry key="PLAIN_TEXT" value="2599" />
+          <entry key="PLAIN_TEXT" value="3099" />
           <entry key="SCSS" value="498" />
           <entry key="YAML" value="196" />
         </counts>
@@ -124,8 +123,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-10-25-url.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -222,7 +221,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1050" />
   </component>
@@ -338,15 +337,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540123910672</updated>
-      <workItem from="1540123914317" duration="35633000" />
+      <workItem from="1540123914317" duration="36513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35633000" />
+    <option name="totallyTimeSpent" value="36513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="840" extended-state="0" />
+    <frame x="-6" y="0" width="781" height="840" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -577,8 +576,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-10-25-url.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
         </state>
       </provider>
     </entry>
