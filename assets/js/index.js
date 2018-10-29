@@ -24,7 +24,7 @@ var interval = setInterval(function () {
 }, duration);
 
 function nextImg(box) {
-  var imgs = box.querySelectorAll('img');
+  var imgs = box.querySelectorAll('.img');
   imgs[box._activeImgIndex].classList.add('hidden');
   var nextIndex = box._activeImgIndex + 1;
   box._activeImgIndex = imgs[nextIndex] ? nextIndex : 0;

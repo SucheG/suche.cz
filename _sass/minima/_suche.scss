@@ -21,6 +21,10 @@ body {
   display: inline-block;
   width: 32%;
 
+  .img {
+    height: 10rem;
+  }
+
   .loader {
     height: .3rem;
     background: #069;

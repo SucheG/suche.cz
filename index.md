@@ -14,12 +14,10 @@ layout: home
     <a href="{{ section.url }}">
       <div>
         <div>{{ section.title }}</div>
-        <div>
-          <img class="" src="https://via.placeholder.com/350x150?text={{ section.title }} x1">
-          {% for image in section.images %}
-            <img class="hidden" src="{{ image }}">
-          {% endfor %}
-        </div>
+        <div class="img" style="background-image:url('https://via.placeholder.com/350x150?text={{ section.title }} x1')"></div>
+        {% for image in section.images %}
+          <div class="img hidden" style="background-image:url('{{ image }}')"></div>
+        {% endfor %}
         <div class="loader"></div>
       </div>
     </a>
