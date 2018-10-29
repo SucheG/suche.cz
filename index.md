@@ -15,11 +15,10 @@ layout: home
       <div>
         <div>{{ section.title }}</div>
         <div>
-          <img src="https://via.placeholder.com/350x150?text={{ section.title }} x1">
-          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x2">
-          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x3">
-          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x4">
-          <img class="hidden" src="https://via.placeholder.com/350x150?text={{ section.title }} x5">
+          <img class="" src="https://via.placeholder.com/350x150?text={{ section.title }} x1">
+          {% for image in section.images %}
+            <img class="hidden" src="{{ image }}">
+          {% endfor %}
         </div>
         <div class="loader"></div>
       </div>
@@ -29,3 +28,5 @@ layout: home
 </div>
 
 <script src="/assets/js/index.js"></script>
+
+
