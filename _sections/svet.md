@@ -1,8 +1,8 @@
 ---
 layout: home # You can ommit this if you've set it as a default
 title: Svět
+first_image: 'https://i.imgur.com/EIYY6m5m.jpg'
 images: [
-'https://i.imgur.com/EIYY6m5m.jpg',
 'https://i.imgur.com/Bkw5d7cm.jpg',
 'https://i.imgur.com/ShDdycnm.jpg',
 'https://i.imgur.com/kicd4sum.jpg',
