@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36fab717-3a53-4a47-be5d-37f65d316a01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_sections/clovek.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sections/clovek.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sections/it.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sections/it.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sections/media.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sections/media.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sections/pohyb.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sections/pohyb.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_sections/sluzby.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sections/sluzby.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sections/svet.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sections/svet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -351,12 +345,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540123910672</updated>
-      <workItem from="1540123914317" duration="48686000" />
+      <workItem from="1540123914317" duration="48845000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48686000" />
+    <option name="totallyTimeSpent" value="48845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
