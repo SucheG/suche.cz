@@ -14,4 +14,4 @@ images: [
 ]
 ---
 
-Some Člověk content
+Zde bude obsah o osobním rozvoji, mindset a o člověku jako jedinci.

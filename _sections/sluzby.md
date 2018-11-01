@@ -5,4 +5,4 @@ first_image: 'https://i.imgur.com/iTXUuCum.jpg'
 images: []
 ---
 
-Some služby content
+Zde budou služby, které poskytuji :)

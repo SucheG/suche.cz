@@ -14,4 +14,4 @@ images: [
 ]
 ---
 
-Some Svět content
+Svět: můj pohled na svět jako celek. Jakým způsobem ho můžeš ovlivnit.

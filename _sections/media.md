@@ -10,4 +10,4 @@ images: [
 ]
 ---
 
-Some Media content
+Haaha, tady bude moje oblíbená hudba, zajímavé obrázky a videa, či filmy, nebo obsah, který nějakým způsobem chci šířit dále.

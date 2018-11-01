@@ -11,4 +11,4 @@ images: [
 ]
 ---
 
-Some Pohyb content
+Jen pár informací o pohybu a o tom jak jsem začal cvičit a jak pokračuji.

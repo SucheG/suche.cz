@@ -11,4 +11,4 @@ images: [
 ]
 ---
 
-Some IT content
+Zde budou témata týkající se IT, bude to zaměřené na praktické využití a pro širší veřejnost.
