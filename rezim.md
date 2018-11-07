@@ -1,4 +1,4 @@
-# Režim, který dodržovat
+## Režim
 ## RÁNO
 <input type="checkbox" id="x1" /><label for="x1">vstávat v 5:55</label><br>
 <input type="checkbox" id="x2" /><label for="x2">cvičnení - statika 10 min</label><br>
