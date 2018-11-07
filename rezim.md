@@ -1,0 +1,14 @@
+# Režim, který dodržovat
+## RÁNO
+<input type="checkbox" id="x1" /><label for="x1">vstávat v 5:55</label>
+<input type="checkbox" id="x2" /><label for="x2">cvičnení - statika 10 min</label>
+<input type="checkbox" id="x3" /><label for="x3">sprcha</label>
+<input type="checkbox" id="x4" /><label for="x4">snídaně</label>
+<input type="checkbox" id="x5" /><label for="x5">smích :)</label>
+
+## VEČER
+<input type="checkbox" id="y1" /><label for="y1">jít spát v 22:00</label>
+<input type="checkbox" id="y2" /><label for="y2">cvičení - 10 min - tabata - abs routine</label>
+<input type="checkbox" id="y3" /><label for="y3">sprcha</label>
+<input type="checkbox" id="y4" /><label for="y4">meditace</label>
+<input type="checkbox" id="y5" /><label for="y5">čtení</label>
