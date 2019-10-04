@@ -8,7 +8,6 @@
 layout: home
 ##################################### kde jsem přestal: úprava obrázku na úvodní stránce - optimalizovat a změnit způsob animace pomocí animate.css 
 ---
-<div style="margin: 1rem 0; text-align: center; font-size: 1.2rem;">Od 1. listopadu se intenzivně připravuji na zkoušky asistenta trenéra kalisteniky. Vývoj webu bude pokračovat na konci listopadu. :)</div>
 <div>
   {% for section in site.sections %}
   <div class="section-box">
