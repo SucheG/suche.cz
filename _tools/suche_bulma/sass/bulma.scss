@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Roboto&display=swap');
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$family-primary: 'Roboto', sans-serif;
+$family-secondary: 'Alata', sans-serif;
+
+$body-background-color: $grey-darker;
+$content-heading-color: $white-ter;
+$content-heading-weight: 400;
+
+$black: #000;
+
+@import "../node_modules/bulma/bulma.sass";
+
+.content p a {
+  color: unset;
+  padding: 0 0.2rem;
+  background-color: #222;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #036;
+  }
+}
+
+a.tag:hover {
+  text-decoration: none;
+}
+
+.navbar.is-black .navbar-item {
+  &.is-active {
+    border-top: 2px solid #fff;
+  }
+
+  &:not(.is-active):hover {
+    border-top: 1px solid #fff;
+  }
+}
+
+.image.is-centered {
+  margin: auto;
+}
+
+.hero .subtitle + .tags {
+  margin-top: -.5rem;
+}
+
+.navbar-brand.is-centered {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+
+@media only screen and (min-width: $tablet) {
+  .column.same-height {
+    display: flex;
+  }
+}
+
+a.notification {
+  display: block;
+}
+
+.image-box {
+  a.notification {
+    color: white;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+      > div.bg {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    > div.bg {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    h3, p {
+      position: relative;
+      margin-top: 0;
+    }
+  }
+}
+
+.image.is-rounded img {
+  border-radius: .5rem;
+}
+
+.img-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+figure.image.is-gif {
+  margin-top: 0;
+  cursor: pointer;
+
+  .icon {
+    position: absolute;
+    left: 47%;
+    top: 47%;
+    z-index: 1;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.notification.is-active {
+  border-left: 4px solid #08c;
+  border-radius: 0 4px 4px 0;
+
+  &:focus {
+    outline: none;
+  }
+}
