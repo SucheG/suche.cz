@@ -1,21 +1,3 @@
-// Facebook chat plugin
-
-window.fbAsyncInit = function () {
-  FB.init({
-    xfbml: true,
-    version: 'v8.0'
-  });
-};
-
-(function (d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = 'https://connect.facebook.net/cs_CZ/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
 // Anchor highlight
 let prevAnchor = null;
 
@@ -82,4 +64,46 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.is-gif').forEach(function (gifParent) {
     new GIF(gifParent);
   });
+});
+
+
+/*
+TabContents = Prvek pro přepínání tabů a jeho obsahu
+el: div element obsahující .tabs a .contents
+tabs jsou <li> v .tabs
+contenct jsou div
+provázané pomocí pořadí
+*/
+function TabContents(el) {
+  this.el = el;
+  this.tabItems = el.querySelectorAll('.tabs li');
+  this.contents = el.querySelectorAll('.contents > div');
+  if (this.tabItems.length !== this.contents.length) {
+    console.error(el, 'has differenct count of tabs and contents');
+  }
+
+  var T = this;
+
+  this.tabItems.forEach(function (tabItem, index) {
+    tabItem.addEventListener('click', function () {
+      T.show(index);
+    });
+  })
+}
+
+TabContents.prototype.show = function(index) {
+  var oldTab = this.el.querySelector('li.is-active');
+  if (oldTab) {
+    oldTab.classList.remove('is-active');
+  }
+  var oldContent = this.el.querySelector('.contents div.is-active');
+  if (oldContent) {
+    oldContent.classList.remove('is-active');
+  }
+  this.tabItems[index].classList.add('is-active');
+  this.contents[index].classList.add('is-active');
+};
+
+document.querySelectorAll('.tab-contents').forEach(function (el) {
+  new TabContents(el);
 });
