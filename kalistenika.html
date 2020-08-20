@@ -116,26 +116,11 @@ permalink: /kalistenika/
 
 <h2 class="is-family-secondary is-size-4">Detaily služeb</h2>
 
-<a href="#individual" id="individual" class="notification is-black">
-  <h3 class="is-family-secondary is-size-5">Individuální trénink</h3>
-  <p>Pokud nevíš jak začít, nebo prostě jen rád cvičíš pod vedením</p>
-</a>
-
-<a href="#know-how" id="know-how" class="notification is-black">
-  <h3 class="is-family-secondary is-size-5">Předání know how</h3>
-  <p>Chceš se naučit perfektní techniku cviků a jejich progresů?</p>
-</a>
-
-<a href="#ranni-trenink" id="ranni-trenink" class="notification is-black">
-  <h3 class="is-family-secondary is-size-5">Ranní trénink</h3>
-  <p>Pravidelný ranní trénink kalisteniky pro začínající i pokročilé</p>
-</a>
-
-<a href="#nedelni-trenink" id="nedelni-trenink" class="notification is-black">
-  <h3 class="is-family-secondary is-size-5">Nedělní trénink</h3>
-  <p>Volný nedělní trénink s partou podle toho, jak se domluvíme</p>
-</a>
-
+<div class="tags is-family-secondary">
+  {% for item in site.kalistenika %}
+  <a class="tag is-medium is-black has-background-black-ter" href="{{ item.url }}">{{ item.title }}</a>
+  {% endfor %}
+</div>
 
 <h2 class="is-family-secondary is-size-4">Cesta</h2>
 <p>Moje cesta pohybem začala v lednu 2014, kdy jsem ještě s jedním kamarádem došel na první trénink skupiny SebeRevolta Olomouc. Od té doby mě cvičení začalo bavit a chodil jsem snad na všechny
@@ -157,10 +142,13 @@ permalink: /kalistenika/
       <img class="" src="/assets/img/kali-palmovka-L-sit.jpg" alt="">
     </figure>
   </div>
-  <div class="column is-12-mobile is-8-tablet">
+  <div class="column is-12-mobile is-8-tablet is-hidden-mobile">
     <div class="box img-cover" style="height: 100%; background-image: url('/assets/img/kali-sr-rigrovy-sady.jpg');"></div>
   </div>
 </div>
+<figure class="image is-rounded is-hidden-tablet">
+  <img class="" src="/assets/img/kali-sr-rigrovy-sady.jpg" alt="">
+</figure>
 
 
 <h3 class="is-family-secondary is-size-5">Vzdělání a kurzy</h3>
@@ -170,6 +158,6 @@ permalink: /kalistenika/
   <li>2020: Cvičení s kettlebell: Simple & Sinister (BK5)</li>
 </ul>
 
-<figure class="image is-rounded" style="margin: 2rem 0;">
+<figure class="image is-rounded">
   <img src="/assets/img/kali-kurz-hromadna.jpg" alt="">
 </figure>

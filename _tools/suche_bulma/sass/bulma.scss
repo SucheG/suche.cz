@@ -38,11 +38,11 @@ a.tag:hover {
 
 .navbar.is-black .navbar-item {
   &.is-active {
-    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
   }
 
   &:not(.is-active):hover {
-    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -138,13 +138,33 @@ figure.image.is-gif {
 }
 
 .tab-contents {
-  min-height: 500px;
+  .tabs {
+    margin-bottom: 0;
+  }
+
+  .contents {
+    padding-top: .8rem;
+    min-height: 500px;
+  }
 
   .contents > div {
+
     display: none;
 
     &.is-active {
       display: block;
     }
   }
+}
+
+.content figure {
+  margin: 0 !important;
+}
+
+.navbar-item .dropdown-menu {
+  padding-top: 10px;
+}
+
+.tabs ul {
+  margin: 0;
 }

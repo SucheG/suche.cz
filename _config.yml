@@ -1,0 +1,10 @@
+# pokud přidáváme kolekci je potřeba restart server
+collections:
+  kalistenika:
+    output: true
+    permalink: /:name
+
+
+instagram: https://www.instagram.com/suche.cz
+facebook: https://facebook.com/suche.cz
+messanger: https://m.me/suche.cz

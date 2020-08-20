@@ -91,7 +91,7 @@ function TabContents(el) {
   })
 }
 
-TabContents.prototype.show = function(index) {
+TabContents.prototype.show = function (index) {
   var oldTab = this.el.querySelector('li.is-active');
   if (oldTab) {
     oldTab.classList.remove('is-active');
@@ -107,3 +107,16 @@ TabContents.prototype.show = function(index) {
 document.querySelectorAll('.tab-contents').forEach(function (el) {
   new TabContents(el);
 });
+
+
+// for touch devices
+if (window.addEventListener) {
+  var once = false;
+  window.addEventListener('touchstart', function () {
+    if (!once) {
+      once = true;
+      // Do what you need for touch-screens only
+      document.getElementById('kali-link').classList.add('is-hidden');
+    }
+  });
+}

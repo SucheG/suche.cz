@@ -10,34 +10,15 @@ is_active_index: is-active
 
 <h2 class="is-family-secondary is-size-4">Trenérské služby</h2>
 <div class="columns is-multiline image-box">
+  {% for item in site.kalistenika %}
   <div class="column is-6 same-height">
-    <a href="/kalistenika/#individual" class="notification" style="background-image: url('/assets/img/index-individual.png');">
+    <a href="{{ item.url }}" class="notification" style="background-image: url('{{ item.img_index }}');">
       <div class="bg"></div>
-      <h3 class="is-family-secondary is-size-5">Individuální trénink</h3>
-      <p class="is-size-6">Pokud nevíš jak začít, nebo prostě jen rád cvičíš pod vedením</p>
+      <h3 class="is-family-secondary is-size-5">{{ item.title }}</h3>
+      <p class="is-size-6">{{ item.description }}</p>
     </a>
   </div>
-  <div class="column is-6 same-height">
-    <a href="/kalistenika/#know-how" class="notification" style="background-image: url('/assets/img/index-know-how.png');">
-      <div class="bg"></div>
-      <h3 class="is-family-secondary is-size-5">Předání know how</h3>
-      <p class="is-size-6">Chceš se naučit perfektní techniku cviků a jejich progresů?</p>
-    </a>
-  </div>
-  <div class="column is-6 same-height">
-    <a href="/kalistenika/#ranni-trenink" class="notification" style="background-image: url('/assets/img/index-skupinovka.JPG');">
-      <div class="bg"></div>
-      <h3 class="is-family-secondary is-size-5">Ranní trénink</h3>
-      <p class="is-size-6">Pravidelný ranní trénink kalisteniky pro začínající i pokročilé</p>
-    </a>
-  </div>
-  <div class="column is-6 same-height">
-    <a href="/kalistenika/#nedelni-trenink" class="notification" style="background-image: url('/assets/img/index-nedelni-trenink.png');">
-      <div class="bg"></div>
-      <h3 class="is-family-secondary is-size-5">Nedělní trénink</h3>
-      <p class="is-size-6">Volný nedělní trénink s partou podle toho, jak se domluvíme</p>
-    </a>
-  </div>
+  {% endfor %}
 </div>
 
 <h2 class="is-family-secondary is-size-4">Programování</h2>

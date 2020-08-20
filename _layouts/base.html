@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -35,9 +39,23 @@
       "headline": "{{ page.title }}",
       "author": {
         "@type": "Person",
-        "name": "Suche Ganbaatar"
+        "name": "Suche Ganbaatar",
+        "sameAs": [
+          "https://www.facebook.com/suche.cz",
+          "https://instagram.com/suche.cz"
+        ],
+        "homeLocation": "Praha",
+        "knowsAbout": [
+          "kalistenika",
+          "fitness",
+          "Python",
+          "HTML",
+          "Django"
+        ],
+        "knowsLanguage": ["czech", "english"],
+        "image": "{{ page.img }}"
       },
-      "description": "{{ page.title }} {{ page.subtitle }} {{ page.description }}",
+      "description": "{{ page.title }} {{ page.subtitle }}. {{ page.description }}",
       "url": "https://suche.cz{{ page.url }}",
       "name": "{{ page.title }} &middot; suche.cz",
       "@context": "https://schema.org"
@@ -46,7 +64,7 @@
   <link rel="stylesheet" href="/assets/css/style.css?t=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 </head>
-<body class="has-navbar-fixed-bottom">
+<body>
 <section class="hero has-text-centered is-black is-small">
   <div class="hero-body">
     <div class="container">
@@ -61,17 +79,17 @@
           <h2 class="subtitle is-italic">{{ page.subtitle }}</h2>
 
           <div class="tags is-centered">
-            <a href="https://www.instagram.com/suche.cz" class="tag is-black" target="_blank">
+            <a href="{{ site.instagram }}" class="tag is-black" target="_blank">
               <span class="icon has-text-danger">
                 <i class="fa-lg fab fa-instagram"></i>
               </span>
             </a>
-            <a href="https://fb.me/suche.cz" class="tag is-black" target="_blank">
+            <a href="{{ site.facebook }}" class="tag is-black" target="_blank">
               <span class="icon has-text-link">
                 <i class="fa-lg fab fa-facebook"></i>
               </span>
             </a>
-            <a href="https://m.me/suche.cz" class="tag is-black" target="_blank">
+            <a href="{{ site.messanger }}" class="tag is-black" target="_blank">
               <span class="icon has-text-info">
                 <i class="fa-lg fab fa-facebook-messenger"></i>
               </span>
@@ -88,19 +106,7 @@
   </div>
 </section>
 
-<section class="section is-small">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-10-tablet is-9-desktop is-8-widescreen is-7-fullhd">
-        <div class="content has-text-white-ter">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<nav class="navbar is-black is-fixed-bottom" role="navigation" aria-label="main navigation">
+<nav class="navbar is-black" role="navigation" aria-label="main navigation" style="position: -webkit-sticky; position: sticky; top: 0;">
   <div class="navbar-brand is-family-secondary is-centered">
     <a class="navbar-item {{ page.is_active_index }}" href="/">
       <span class="icon">
@@ -108,13 +114,27 @@
       </span>
       <span>Úvod</span>
     </a>
-
-    <a class="navbar-item {{ page.is_active_kalistenika }}" href="/kalistenika/">
-      <span class="icon">
-        <i class="fas fa-child"></i>
-      </span>
-      <span>Kali<span class="is-hidden-mobile">stenika</span></span>
-    </a>
+    <div class="dropdown is-hoverable" style="cursor: pointer;"><!-- aby vyplnil celou plochu -->
+                                                                <!-- link pro non touch aby se při clicku dostal na link, pro telefony nelze -> hover vs click !!! v js se nastavuje na první touch :) -->
+      <a id="kali-link" href="/kalistenika/" style="position: absolute; display: block; width: 100%; height: 100%; z-index: 1;"></a>
+      <div class="navbar-item {{ page.is_active_kalistenika }}">
+        <div class="dropdown-trigger has-text-white">
+          <span class="icon">
+            <i class="fas fa-child"></i>
+          </span>
+          <span>Kali<span class="is-hidden-mobile">stenika</span></span>
+        </div>
+        <div class="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="/kalistenika/" class="dropdown-item {% if page.url == '/kalistenika/' %}is-active{% endif %}">O Kalistenice</a>
+            <hr class="dropdown-divider">
+            {% for item in site.kalistenika %}
+            <a href="{{ item.url }}" class="dropdown-item {% if page.url == item.url %}is-active{% endif %}">{{ item.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
 
     <a class="navbar-item {{ page.is_active_programovani }}" href="/programovani/">
       <span class="icon">
@@ -123,34 +143,26 @@
       <span>Pro<span class="is-hidden-mobile">gramování</span></span>
     </a>
 
-    <a class="navbar-item {{ page.is_active_feed }}" href="/feed/">
+    <a class="navbar-item {{ page.is_active_blog }}" href="/blog/">
       <span class="icon">
         <i class="fas fa-rss"></i>
       </span>
-      <span>Feed</span>
+      <span>Blog</span>
     </a>
+  </div>
+</nav>
 
-    <div class="navbar-item has-dropdown is-hoverable {{ page.is_active_other }}">
-      <div class="dropdown is-right is-up is-hoverable">
-        <div class="dropdown-trigger">
-          <button class="button is-black has-text-weight-bold is-size-5" aria-haspopup="true">
-            <i class="fas fa-ellipsis-v is-size-6"></i>
-          </button>
-        </div>
-        <div class="dropdown-menu" role="menu">
-          <div class="dropdown-content">
-            <div class="dropdown-item is-hidden">
-              <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-            </div>
-            
-            <a href="/poslat-zpravu/" class="dropdown-item {{ page.is_active_poslat_zpravu }}">Poslat zprávu</a>
-            <a href="/venkovni-trenink/" class="dropdown-item {{ page.is_active_venkovni_trenink }}">Venkovní trénink</a>
-          </div>
+<section class="section is-small">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-10-tablet is-9-desktop is-8-widescreen is-7-fullhd">
+        <div class="content has-text-white-ter" style="min-height: 300px;">
+          {{ content }}
         </div>
       </div>
     </div>
   </div>
-</nav>
+</section>
 
 <div style="position: fixed; top: 0; left: 0; z-index: 50; display: none;">
   <div class="tags">
@@ -162,9 +174,34 @@
   </div>
 </div>
 
+<section class="footer has-background-black-ter has-text-centered">
+  <p>&copy; Suche Ganbaatar</p>
+  <p>Sukhdorj Ganbaatar IČ: 05423252</p>
+  <p>Bankovní spojení: 2400304977/2010</p>
+  <div class="tags is-centered" style="margin-top: .5rem;">
+    <a href="{{ site.instagram }}" class="tag has-background-black-ter" target="_blank">
+      <span class="icon">
+        <i class="fa-lg fab fa-instagram"></i>
+      </span>
+    </a>
+    <a href="{{ site.facebook }}" class="tag has-background-black-ter" target="_blank">
+      <span class="icon">
+        <i class="fa-lg fab fa-facebook"></i>
+      </span>
+    </a>
+    <a href="{{ site.messanger }}" class="tag has-background-black-ter" target="_blank">
+      <span class="icon">
+        <i class="fa-lg fab fa-facebook-messenger"></i>
+      </span>
+    </a>
+    <a href="https://www.youtube.com/channel/UC3ZjbExozk5GG2B_9k6WbbA" class="tag has-background-black-ter is-hidden" target="_blank">
+      <span class="icon">
+        <i class="fa-lg fab fa-youtube"></i>
+      </span>
+    </a>
+  </div>
+</section>
+
 <script src="/assets/js/main.js?t=1"></script>
-
-
-
 </body>
 </html>
