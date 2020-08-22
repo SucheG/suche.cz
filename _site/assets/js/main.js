@@ -29,21 +29,38 @@ function GIF(parent) {
   this.parent = parent;
   this.img = parent.querySelector('img');
   this.icon = parent.querySelector('.icon');
+  this.icon_i = parent.querySelector('.icon i');
   this.isPlaying = false;
+  this.gifLoaded = false;
   let T = this;
 
   GIF.ALL.push(this);
 
-  parent.addEventListener('click', function () {
+  this.parent.addEventListener('click', function (ev) {
     T.isPlaying ? T.stop() : T.play();
+  });
+
+  this.img.addEventListener('load', function (ev) {
+    console.log('loaded');
+
+    if (T.isPlaying && !T.gifLoaded) {
+      T.gifLoaded = true;
+    }
+
+    if (T.isPlaying) {
+      T.icon.classList.add('is-hidden');
+    }
   });
 }
 
 GIF.ALL = [];
 
 GIF.prototype.play = function () {
+  if (!this.gifLoaded) {
+    this.icon_i.classList = "fa-2x fas fa-spin fa-spinner";
+  }
+
   this.isPlaying = true;
-  this.icon.classList.add('is-hidden');
   this.img.setAttribute('src', this.img.src.replace('.img.gif', '.gif'));
 
   // stopne ostatní, pokud hrají
@@ -56,6 +73,7 @@ GIF.prototype.play = function () {
 
 GIF.prototype.stop = function () {
   this.isPlaying = false;
+  this.icon_i.classList = "fa-2x fas fa-play-circle";
   this.icon.classList.remove('is-hidden');
   this.img.setAttribute('src', this.img.src.replace('.gif', '.img.gif'));
 };
