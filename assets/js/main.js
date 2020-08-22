@@ -1,28 +1,3 @@
-// Anchor highlight
-let prevAnchor = null;
-
-function setActiveAnchor() {
-  if (location.hash) {
-    let el = document.querySelector(location.hash);
-    if (el) {
-      if (prevAnchor) {
-        prevAnchor.classList.remove('is-active');
-      }
-
-      el.classList.add('is-active');
-      prevAnchor = el;
-    }
-  }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  setActiveAnchor();
-});
-
-window.addEventListener("hashchange", function (ev) {
-  setActiveAnchor();
-});
-
 // GIF animation
 
 function GIF(parent) {
