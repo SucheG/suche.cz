@@ -11,3 +11,25 @@ messanger: https://m.me/suche.cz
 
 gems:
   - jekyll-sitemap
+
+
+defaults:
+  - scope:
+      path: "assets/img/cviky/1"
+    values:
+      cviky1: true
+
+  - scope:
+      path: "assets/img/cviky/2"
+    values:
+      cviky2: true
+
+  - scope:
+      path: "assets/img/cviky/3"
+    values:
+      cviky3: true
+
+  - scope:
+      path: "assets/img/cviky/4"
+    values:
+      cviky4: true

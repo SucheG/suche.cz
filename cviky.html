@@ -1,0 +1,36 @@
+---
+layout: base
+title: Cviky
+subtitle: feed cviků
+img: /assets/img/suche-workout.jpg
+is_active_kalistenika: is-active
+permalink: /kalistenika/cviky/
+cviky:
+- cviky1
+- cviky2
+- cviky3
+- cviky4
+---
+
+<p class="has-text-centered">Feed různých cviků. Postuplně budu přidávat další cviky. Pošli mi i ty obrázek nebo GIF a já jej hodím do tohoto feedu. Naoplátku dám odkaz na tvůj web dole do
+                             stránky.</p>
+
+<div class="image-grid">
+  {% for podminka in page.cviky %}
+  {% assign image_files1 = site.static_files | where: podminka, true | sort: 'date' | reverse %}
+  <div class="col">
+    {% for image in image_files1 %}
+    {% if image.path contains '.img.gif' or image.extname == '.jpg' %}
+    <figure class="image {% if image.path contains '.img.gif' %} is-gif{% endif %}">
+      <img src="{{ image.path }}" alt="{{ image.basename }}" title="{{ image.basename }}">
+      {% if image.path contains '.img.gif' %}
+      <span class="icon">
+        <i class="fa-2x fas fa-play-circle"></i>
+      </span>
+      {% endif %}
+    </figure>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
