@@ -16,7 +16,7 @@ function GIF(parent) {
   });
 
   this.img.addEventListener('load', function (ev) {
-    console.log('loaded');
+    console.log('loaded', new Date());
 
     if (T.isPlaying && !T.gifLoaded) {
       T.gifLoaded = true;
@@ -54,6 +54,9 @@ GIF.prototype.stop = function () {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Images lazy load -> nevím zda to funguje
+  new MiniLazyload({}, '.lazyload');
+
   document.querySelectorAll('.is-gif').forEach(function (gifParent) {
     new GIF(gifParent);
   });
