@@ -8,3 +8,6 @@ collections:
 instagram: https://www.instagram.com/suche.cz
 facebook: https://facebook.com/suche.cz
 messanger: https://m.me/suche.cz
+
+gems:
+  - jekyll-sitemap
