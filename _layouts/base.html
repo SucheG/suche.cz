@@ -20,48 +20,27 @@ layout: compress
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} &middot; suche.cz</title>
+  <title>{{ page.title }} · suche.cz</title>
 
   <meta property="og:locale" content="cs_CZ">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page.title }} &middot; suche.cz"/>
+  <meta property="og:title" content="{{ page.title }} · suche.cz"/>
   <meta property="og:url" content="https://suche.cz{{ page.url }}"/>
   <meta property="og:image" content="https://suche.cz{{ page.img }}"/>
-  <meta property="og:site_name" content="Suche Ganbaatar &middot; suche.cz">
-  <meta property="og:description" content="{{ page.title }} {{ page.subtitle }} {{ page.description }}">
-  <meta name="description" content="{{ page.title }} {{ page.subtitle }} {{ page.description }}"/>
+  <meta property="og:site_name" content="Suche Ganbaatar · suche.cz">
+  <meta property="og:description" content="{{ page.description }} {{ page.title }} - {{ page.subtitle }}">
+  <meta name="description" content="{{ page.description }} {{ page.title }} - {{ page.subtitle }}"/>
+  <meta name="keywords" content="{{ page.keywords }}"/>
   <meta name="author" content="Suche Ganbaatar"/>
   <link rel="canonical" href="https://suche.cz{{ page.url }}"/>
 
-  <script type="application/ld+json">
-    {
-      "@type": "WebSite",
-      "headline": "{{ page.title }}",
-      "author": {
-        "@type": "Person",
-        "name": "Suche Ganbaatar",
-        "sameAs": [
-          "https://www.facebook.com/suche.cz",
-          "https://instagram.com/suche.cz"
-        ],
-        "homeLocation": "Praha",
-        "knowsAbout": [
-          "kalistenika",
-          "fitness",
-          "Python",
-          "HTML",
-          "Django"
-        ],
-        "knowsLanguage": ["czech", "english"],
-        "image": "{{ page.img }}"
-      },
-      "description": "{{ page.title }} {{ page.subtitle }}. {{ page.description }}",
-      "url": "https://suche.cz{{ page.url }}",
-      "name": "{{ page.title }} &middot; suche.cz",
-      "@context": "https://schema.org"
-    }</script>
+  {% if page.seo_schema %}
+  {% include {{ page.seo_schema }} %}
+  {% else %}
+  {% include schema_default.html %}
+  {% endif %}
 
-  <link rel="stylesheet" href="/assets/css/style.css?t=1">
+  <link rel="stylesheet" href="/assets/css/style.css?t=2">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 </head>
 <body>
@@ -202,6 +181,6 @@ layout: compress
   </div>
 </section>
 
-<script src="/assets/js/main.js?t=1"></script>
+<script src="/assets/js/main.js?t=2"></script>
 </body>
 </html>
