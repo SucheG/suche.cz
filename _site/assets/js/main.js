@@ -116,3 +116,35 @@ if (window.addEventListener) {
     }
   });
 }
+
+
+// Modals
+function showModal(id, func) {
+  document.querySelector('#' + id).classList.add('is-active');
+  if (func) func();
+}
+
+function hideModal(id, func) {
+  document.querySelector('#' + id).classList.remove('is-active');
+  if (func) func();
+}
+
+// Modals init
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.modal').forEach(function (modal) {
+    modal.querySelector('.modal-background').addEventListener('click', function () {
+      hideModal(modal.id);
+    });
+    modal.querySelector('.modal-close').addEventListener('click', function () {
+      hideModal(modal.id);
+    });
+  });
+});
+
+// close modal on ESC key
+document.addEventListener("keyup", function (event) {
+  var activeModal = document.querySelector('.modal.is-active');
+  if (event.key === 'Escape' && activeModal) {
+    hideModal(activeModal.id);
+  }
+});

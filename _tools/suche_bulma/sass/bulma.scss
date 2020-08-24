@@ -114,7 +114,7 @@ a.notification {
 }
 
 figure.image.is-gif {
-  margin-top: 0;//
+  margin-top: 0; //
   cursor: pointer;
 
   .icon {
@@ -200,6 +200,17 @@ figure.image.is-gif {
       -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
+    }
+  }
+
+
+  &.is-half {
+    @media screen and (min-width: $desktop) {
+      .col {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
     }
   }
 
