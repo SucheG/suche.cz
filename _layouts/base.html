@@ -188,9 +188,10 @@ layout: compress
 <script src="/assets/js/main.js?t=4"></script>
 
 
+{% if page.messanger and page.messanger_color %}
 
 <!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
+<div id="fb-root" class="is-hidden"></div>
 <script>
   window.fbAsyncInit = function () {
     FB.init({
@@ -209,8 +210,9 @@ layout: compress
   }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your Chat Plugin code -->
-<div class="fb-customerchat" attribution=setup_tool page_id="116446140031823" theme_color="#0084ff" logged_in_greeting="{{ page.messanger }}"
+<div class="fb-customerchat" attribution=setup_tool page_id="116446140031823" theme_color="#{{ messanger_color }}" logged_in_greeting="{{ page.messanger }}"
      logged_out_greeting="{{ page.messanger }}"></div>
 
+{% endif %}
 </body>
 </html>
