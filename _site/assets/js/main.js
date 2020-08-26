@@ -1,3 +1,7 @@
+function showMessanger() {
+  document.getElementById('fb-root').classList.remove('is-hidden');
+}
+
 // GIF animation
 
 function GIF(parent) {
