@@ -44,6 +44,30 @@ layout: compress
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 </head>
 <body>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: 'v8.0'
+    });
+  };
+
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/cs_CZ/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="116446140031823" theme_color="#0084ff" logged_in_greeting="Ahoj, jak vám mohu pomoci ?"
+     logged_out_greeting="Ahoj, jak vám mohu pomoci ?"></div>
+
 <section class="hero has-text-centered is-black is-small">
   <div class="hero-body">
     <div class="container">
@@ -185,34 +209,6 @@ layout: compress
 <script src="https://cdn.jsdelivr.net/npm/minilazyload@2.3.3/dist/minilazyload.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=NodeList.prototype.forEach"></script>
 <script src="/assets/js/main.js?t=4"></script>
-
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function () {
-    FB.init({
-      xfbml: true,
-      version: 'v8.0'
-    });
-  };
-
-  (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = 'https://connect.facebook.net/cs_CZ/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-     attribution=setup_tool
-     page_id="116446140031823"
-     theme_color="#0084ff"
-     logged_in_greeting="Ahoj, jak vám mohu pomoci ?"
-     logged_out_greeting="Ahoj, jak vám mohu pomoci ?">
-</div>
 
 </body>
 </html>
