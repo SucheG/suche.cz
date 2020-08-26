@@ -189,7 +189,6 @@ layout: compress
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
-  // Facebook chat plugin
   window.fbAsyncInit = function () {
     FB.init({
       xfbml: true,
@@ -204,9 +203,16 @@ layout: compress
     js.id = id;
     js.src = 'https://connect.facebook.net/cs_CZ/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
+  }(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- Your Chat Plugin code -->
-<div class="fb-customerchat" attribution=setup_tool page_id="116446140031823" logged_in_greeting="Ahoj, jak vám mohu pomoci ?" logged_out_greeting="Ahoj, jak vám mohu pomoci ?"></div>
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="116446140031823"
+     theme_color="#0084ff"
+     logged_in_greeting="Ahoj, jak vám mohu pomoci ?"
+     logged_out_greeting="Ahoj, jak vám mohu pomoci ?">
+</div>
+
 </body>
 </html>
