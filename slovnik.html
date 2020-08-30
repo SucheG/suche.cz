@@ -18,109 +18,15 @@ description: Zkratky a významy slov ze světa kalisteniky i fitness, které by 
   </tr>
   </thead>
   <tbody>
+  {% assign sortedSlovnik = site.data.slovnik | sort: "pojem" %}
+  {% for item in sortedSlovnik %}
+  {% if item.pojem %}
   <tr>
-    <th>ROM</th>
-    <td>zkratka pro <em>Range Of Motion</em> - rozsah pohybu např. kloubu nebo končetiny</td>
+    <td class="is-family-secondary">{{ item.pojem }}</td>
+    <td>{{ item.vyznam }}</td>
   </tr>
-  <tr>
-    <th>REP</th>
-    <td>repetion - počet opakování, které se cvičí na jeden zátah bez pauzy</td>
-  </tr>
-  <tr>
-    <th>SET</th>
-    <td>série - např.: 10 opakování kliků a 3 <strong>série (sety)</strong></td>
-  </tr>
-  <tr>
-    <th>FULL BODY</th>
-    <td>celé tělo - např.: fullbody trénink je trénink na celé tělo</td>
-  </tr>
-
-  <tr>
-    <th>UPPER BODY</th>
-    <td></td>
-  </tr>
-
-  <tr>
-    <th>LEG DAY</th>
-    <td></td>
-  </tr>
-
-  <tr>
-    <th>PULL</th>
-    <td>tah</td>
-  </tr>
-  <tr>
-    <th>PUSH / PRESS</th>
-    <td>tlak</td>
-  </tr>
-  <tr>
-    <th>LATS</th>
-    <td>zkratka pro široký zádový sval z latinského <em>m. lattissimus dorsi</em></td>
-  </tr>
-
-  <tr>
-    <th>TUCK</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>STRADDLE</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>FULL</th>
-    <td></td>
-  </tr>
-
-  <tr>
-    <th>CORE</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>ABS</th>
-    <td></td>
-  </tr>
-
-  <tr>
-    <th>PLYOMETRIE</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>DYNAMIKA</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>STATIKA</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>IZOMETRIE</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>HYPERTROFIE</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>ATROFIE</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>TOT</th>
-    <td>Time Under Tension</td>
-  </tr>
-  <tr>
-    <th>G&G</th>
-    <td></td>
-  </tr>
-
-  <tr>
-    <th>STALKY</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>BAR</th>
-    <td></td>
-  </tr>
+  {% endif %}
+  {% endfor %}
 
   </tbody>
 </table>

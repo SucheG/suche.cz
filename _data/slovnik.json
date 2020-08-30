@@ -1,0 +1,134 @@
+[
+  {
+    "pojem": "ROM",
+    "vyznam": "zkratka pro <em>Range Of Motion</em> - rozsah pohybu např. kloubu nebo končetiny"
+  },
+  {
+    "pojem": "REP",
+    "vyznam": "repetion - počet opakování, které se cvičí na jeden zátah bez pauzy"
+  },
+  {
+    "pojem": "SET",
+    "vyznam": "série - např.: 10 opakování kliků a 3 <strong>série (sety)</strong>"
+  },
+  {
+    "pojem": "FULL BODY",
+    "vyznam": "celé tělo - např.: fullbody trénink je trénink na celé tělo"
+  },
+  {
+    "pojem": "UPPER BODY",
+    "vyznam": "horní část těla tj. hrudník, záda, ramena, paže"
+  },
+  {
+    "pojem": "LEG DAY",
+    "vyznam": "tréninkový den zaměřený na nohy a hýždě"
+  },
+  {
+    "pojem": "PULL",
+    "vyznam": "tah, např. skupina tahových cviků"
+  },
+  {
+    "pojem": "PUSH / PRESS",
+    "vyznam": "tlak, např. skupina tlakových cviků"
+  },
+  {
+    "pojem": "LATS",
+    "vyznam": "zkratka pro široký zádový sval z latinského <em>m. lattissimus dorsi</em>"
+  },
+  {
+    "pojem": "TUCK",
+    "vyznam": "pozice těla, kdy jsou nohy pokrčené a zcela přitažená k tělu"
+  },
+  {
+    "pojem": "STRADDLE",
+    "vyznam": "pozice těla, kdy jsou nohy natažené a roztažené od sebe"
+  },
+  {
+    "pojem": "FULL",
+    "vyznam": "pozice těla, kdy jsou nohy zcela natažené, proponuté a spojené k sobě"
+  },
+  {
+    "pojem": "CORE",
+    "vyznam": "označuje střed těla zahrnující svaly trupu v oblasti beder, pánve, břicha, kyčlí a hlubokých svalů a bránice"
+  },
+  {
+    "pojem": "ABS",
+    "vyznam": "zkratka pro abdominal muscles - svaly břišní stěny zahrnující přímé, boční, příčné, šíkmé svaly"
+  },
+  {
+    "_pojem": "PLYOMETRIE",
+    "vyznam": ""
+  },
+  {
+    "_pojem": "DYNAMIKA",
+    "vyznam": "dymanika obecně označuje dynamický pohyb"
+  },
+  {
+    "pojem": "IZOMETRIE",
+    "vyznam": "také znamé jako statika - je to typ svalové práce, kdy tělo v jedné pozici pod tenzí po delší dobu, to vede k vyššímu napětí i práci. Příklady cviků: lehčí: L sit, stojka, spodní pozice kliku, plank; težší: back lever, front lever, planche"
+  },
+  {
+    "pojem": "HYPERTROFIE",
+    "vyznam": "nárust počtu buňek nebo zvětšení daného orgánu, např. u svalu - zvětšení svalů - opak atrofie"
+  },
+  {
+    "pojem": "ATROFIE",
+    "vyznam": "úbytek buňek nebo zmenšení daného orgánu, např. u svalu - obytek nebo zmenšení svalů - opak hypertrofie"
+  },
+  {
+    "pojem": "TOT",
+    "vyznam": "Time Under Tension - čas, kdy je sval pod tenzí (pod napětím), často důležitější než počet opakování"
+  },
+  {
+    "pojem": "STALKY",
+    "vyznam": "malá bradýlka na kliky, stojky apod"
+  },
+  {
+    "pojem": "BAR",
+    "vyznam": "anglicky hrazda"
+  },
+  {
+    "pojem": "DROP SET",
+    "vyznam": "česky shazovací série, jde o série, kdy začneme težším cvikem/váhou a postupně snižujeme obtížnost, např: 10 shybů, 10 negativních shybů, 10 australských shybů"
+  },
+  {
+    "pojem": "SUPER SET",
+    "vyznam": "série, kdy se v dané pracovní sérii dělá více cviků baz pauzy, např. 10 shybů a rovnou přejdu na 10 dipů a pak rovnou 20 kliků"
+  },
+  {
+    "pojem": "EXTENZE",
+    "vyznam": "natažení - propnutí v kloubu"
+  },
+  {
+    "pojem": "FLEXE",
+    "vyznam": "ohnutí - ohyb v kloubu"
+  },
+  {
+    "pojem": "SILOVÝ TRÉNINK",
+    "vyznam": "při silovém tréninku se dbá na vysokou intenzitu cviku nebo zátěže (např. nejtěžší variantu shybu), kdy se provádí 1-5 opakování v serii (z toho důvodu, že je pro nás opravdu obtéžné cvik provést) a většími pauzami"
+  },
+  {
+    "pojem": "KRUHOVÝ TRÉNINK",
+    "vyznam": "trénink u kterého se mění stanoviště a lidé se točí tzv. v kruhu a vystřídají se na každém stanocišti, často jako skupinový trénink a také v podobě intervalového tréninku"
+  },
+  {
+    "pojem": "INTERVALOVÝ TRÉNINK",
+    "vyznam": "trénink řízeny časovým itervalem, předem se nastaví časové úseky pro dobu tréninku a odpočinku, po určitou dobu"
+  },
+  {
+    "pojem": "TABATA",
+    "vyznam": "intervalový trénink, jehož jedna jednotka trvá 4 minuty, celkově 8 sérií trvající 20s, pauza je 10s"
+  },
+  {
+    "pojem": "SILOVÉ DÝCHÁNÍ",
+    "vyznam": "způsob bráničního dýchání, kdy se klade důraz na vytvoření nitrobřišního tlaku a aktivní vytlačování vzduchu"
+  },
+  {
+    "pojem": "FREESTYLE",
+    "vyznam": "explozivnní nebo jinak nárožný druh cvíčení, kdy je potřeba velká síla pro provedení náročnách prvků - často jako soutšžní disciplína ve street workoutu"
+  },
+  {
+    "pojem": "WEIGHTED",
+    "vyznam": "zatížený - často použivaný pojem pro weighted trénink, kdy se dělají cviky s přidanou externí váhou pomocí vesty nebo pásu"
+  }
+]

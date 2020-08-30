@@ -7,15 +7,32 @@ is_active_blog: is-active
 permalink: /blog/
 ---
 
-<h2>Články</h2>
 
-
-<!--<h2>Instagram feed</h2>-->
-<!--<div id="pixlee_container"></div>-->
-<!--<script type="text/javascript">-->
-<!--  window.PixleeAsyncInit = function () {-->
-<!--    Pixlee.init({apiKey: '8uYqp82GdivT5rtySIaL'});-->
-<!--    Pixlee.addSimpleWidget({widgetId: '29179'});-->
-<!--  };-->
-<!--</script>-->
-<!--<script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>-->
+<div class="tab-contents">
+  <div class="tabs is-centered">
+    <ul>
+      <li class="is-active"><a>Články</a></li>
+      <li><a id="ig-button">Instagram</a></li>
+    </ul>
+  </div>
+  <div class="contents">
+    <div class="is-active">Žádný článek tu není, ale vím jistě že bude o spánku !</div>
+    <div>
+      <!--https://socialfeed.pixlee.com/app-->
+      <div id="pixlee_container"></div>
+      <script type="text/javascript">
+        document.getElementById('ig-button').addEventListener('click', function () {
+          if (!window.PixleeAsyncInit) {
+            window.PixleeAsyncInit = function () {
+              Pixlee.init({apiKey: '8uYqp82GdivT5rtySIaL'});
+              Pixlee.addSimpleWidget({widgetId: '29179'});
+            };
+            let script = document.createElement('script');
+            script.setAttribute('src', '//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js');
+            document.body.appendChild(script);
+          }
+        });
+      </script>
+    </div>
+  </div>
+</div>
