@@ -7,11 +7,64 @@ is_active_programovani: is-active
 permalink: /programovani/
 ---
 
-<h2>Zkušenosti</h2>
-<h2>Detail služeb</h2>
 
 <h3 id="python-django">Python a Django</h3>
+<p>Python je programovací jazyk, který má přehlednou a uživatelsky přívětivou syntaxi. Podporuje mnoho programovacích stylů a těší se velké popularitě. Často se učí na školách a v praxi se uplatní ve strojovém učení, práci s texty, tvorba webů, datová analýza. Často bývá jako skriptovací jazyk u různých systému (ať už hardware nebo sw produkty). Můžete v něm udělat téměř vše.</p>
+<p>Django je propracovaný webový framework pro tvorbu webových aplikací postavený na Pythonu. Mnoho věcí je tam vyřešených a vývojář se může soustředit na samotnou logika aplikace.</p>
 
 <h3 id="frontend">HTML, CSS, JS, Bulma</h3>
+<p>HTML, CSS a JavaScript v dnešní době internetu patří neodmyslitelně k sobě. Neexistuje moderní web, kterému by chyběla jedna z těchto součástí. HTML je značkovací jazyk, který pomocí tagů definuje strukturu webu. CSS jsou pak pravidla pro vzhled, přechody a i animace. JavaScript je pak funkční a logická část, pomocí kterého se dá ovládat vše co se na stránce děje.</p>
+<p>Vztah webu a jeho součástí: web se skládá z více stránek (pokud to není jednostránkový web). Stránky jsou navzájem propojené odkazy a každá stránka je definovaná HTML kódem. Pro celý web by pak měl existovat jednotný styl definovaný pomocí CSS a JavaScript, který vykonává potřebné chování.</p>
+<p>Bulma je CSS framework vytvořený pro tvorbu vzhledu webu, jsou tam definované různé komponenty a chování, které si lze podle vlastního uvážení přenastavit. Tento framework je responzivní - to znamená, že se dokáže přizpůsobit různým velikostem displaye.</p>
 
-<h2>Cesta</h2>
+<div class="buttons is-centered">
+  <div class="button is-info" onclick="showModal('pro-modal');">Chci začít hned teď!</div>
+</div>
+
+<div class="modal" id="pro-modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <div class="notification is-dark">
+      <div class="tab-contents">
+        <div class="tabs is-centered">
+          <ul>
+            <li class="is-active"><a style="text-decoration: none;">Info</a></li>
+            <li><a style="text-decoration: none;">Úkol</a></li>
+          </ul>
+        </div>
+
+        <div class="contents">
+          <div class="is-active">
+            <h3 class="is-family-secondary is-size-5 has-text-centered">První lekce zdarma</h3>
+            <p>Webová stránky v dnešní době se skládají z HTML, JS a CSS a mediálních souborů jako jsou obrázky a videa.</p>
+            <div>do <span class="is-family-secondary">HTML</span> se zapisuje struktura - nadpis, odstavec, seznamy apod.</div>
+            <div><span class="is-family-secondary">CSS</span> definuje vzhled: např barva a velikost písma, pozice</div>
+            <div><span class="is-family-secondary">JavaSript</span> (zkratka JS) se používá pro logiku - např. co se má stát když se stiskne tlačítko</div>
+          </div>
+          <div>
+            <p>Otevři si konzoli vývojáře (F12 pro Chrome) a záložka Console</p>
+            <p>V tomto úkolu si vytvoříme tlačítko, které zavře modální okno. Do konzole napiš následující příkazy (šedě jsou poznámky):</p>
+            <pre><span class="has-text-grey-light">// vytvoříme element tlačítko</span>
+let button = document.createElement('button');
+<span class="has-text-grey-light">// vybereme prvek do kterého tlačítko vložíme</span>
+let parent = document.querySelector('#pro-modal .notification');
+<span class="has-text-grey-light">// přidáme tlačítko do prvku, už je vidět, ale jen malý čtverec</span>
+parent.appendChild(button);
+<span class="has-text-grey-light">// změníme tlačítku text</span>
+button.textContent = 'Zavřít';
+<span class="has-text-grey-light">// a přidáme třídu pro CSS styl</span>
+button.classList.add('button');
+<span class="has-text-grey-light">// zkus tkačítko stisknout - nic nebude dělat</span>
+<span class="has-text-grey-light">// nastavíme funkci pro zavření okna, nyní už zavírá okno</span>
+button.onclick = function() {
+  hideModal('pro-modal');
+}</pre>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>

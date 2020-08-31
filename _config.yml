@@ -40,7 +40,7 @@ defaults:
       galerie_ranni_trenink: true
 
   - scope:
-      path: "assets/img/cviky/nedelni-trenink"
+      path: "assets/img/galerie/nedelni-trenink"
     values:
       galerie_nedelni_trenink: true
 
