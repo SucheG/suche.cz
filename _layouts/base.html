@@ -40,7 +40,7 @@ layout: compress
   {% include schema_default.html %}
   {% endif %}
 
-  <link rel="stylesheet" href="/assets/css/style.css?t=4">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%Y%m%d' }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 </head>
 <body>
@@ -51,12 +51,12 @@ layout: compress
       <div class="columns is-vcentered is-centered">
         <div class="column is-narrow">
           <figure class="image is-128x128 is-centered">
-            <img class="is-rounded" src="{{ page.img }}" alt="">
+            <img src="{{ page.img }}" alt="{{ page.title }}" class="is-rounded">
           </figure>
         </div>
         <div class="column is-narrow">
           <h1 class="title is-family-secondary">{{ page.title }}</h1>
-          <h2 class="subtitle is-italic">{{ page.subtitle }}</h2>
+          <h2 class="subtitle">{{ page.subtitle }}</h2>
 
           <div class="tags is-centered">
             <a href="{{ site.instagram }}" class="tag is-black" target="_blank">
@@ -186,7 +186,7 @@ layout: compress
 
 <script src="https://cdn.jsdelivr.net/npm/minilazyload@2.3.3/dist/minilazyload.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=NodeList.prototype.forEach"></script>
-<script src="/assets/js/main.js?t=4"></script>
+<script src="/assets/js/main.js?v={{ site.time | date: '%Y%m%d' }}"></script>
 
 </body>
 </html>

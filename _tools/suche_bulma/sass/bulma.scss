@@ -19,6 +19,20 @@ $tabs-border-bottom-color: $grey;
 $tabs-link-active-border-bottom-color: #1abc9c;
 $tabs-link-active-color: $white-bis;
 
+$table-color: $white-ter;
+$table-background-color: $grey-darker;
+$table-head-cell-color: $white-ter;
+$table-cell-heading-color: $white-ter;
+
+body .content table {
+  border: 1px solid #777;
+
+  th, td {
+    border-color: #777;
+  }
+}
+
+
 @import "../node_modules/bulma/bulma.sass";
 
 .content p a {
@@ -145,7 +159,8 @@ figure.image.is-gif {
 
   .contents {
     padding-top: .8rem;
-    min-height: 500px;
+    margin-bottom: 1rem;
+    min-height: 300px;
   }
 
   .contents > div {

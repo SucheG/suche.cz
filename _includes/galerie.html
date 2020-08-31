@@ -1,0 +1,18 @@
+<div class="image-grid is-half">
+  <div class="col">
+    {% for image in image_files %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+    <img data-src="{{ image.path }}" alt="{{ image.basename }}" title="{{ image.basename }}" class="lazyload">
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="col">
+    {% for image in image_files %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 0 %}
+    <img data-src="{{ image.path }}" alt="{{ image.basename }}" title="{{ image.basename }}" class="lazyload">
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

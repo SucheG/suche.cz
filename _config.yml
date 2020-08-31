@@ -1,4 +1,4 @@
-# pokud přidáváme kolekci je potřeba restart server
+## pokud upravíme je potřeba restart server
 collections:
   kalistenika:
     output: true
@@ -9,7 +9,7 @@ instagram: https://www.instagram.com/suche.cz
 facebook: https://facebook.com/suche.cz
 messanger: https://m.me/suche.cz
 
-gems:
+plugins:
   - jekyll-sitemap
 
 
@@ -33,3 +33,16 @@ defaults:
       path: "assets/img/cviky/4"
     values:
       cviky4: true
+
+  - scope:
+      path: "assets/img/galerie/ranni-trenink"
+    values:
+      galerie_ranni_trenink: true
+
+  - scope:
+      path: "assets/img/cviky/nedelni-trenink"
+    values:
+      galerie_nedelni_trenink: true
+
+
+## pokud upravíme je potřeba restart server

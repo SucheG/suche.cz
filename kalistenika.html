@@ -5,8 +5,14 @@ subtitle: pohyb, síla, zdraví
 img: /assets/img/suche-workout.jpg
 is_active_kalistenika: is-active
 permalink: /kalistenika/
+pull_gif:
+- /assets/gif/pull1.img.gif
+- /assets/gif/pull2.img.gif
+- /assets/gif/pull3.img.gif
 ---
-<p class="has-text-centered is-italic">Cvič pro sílu, zdraví a pro zábavu. Svaly, hubnutí a kondice přijdou jako vítaný bonus.</p>
+
+<!--<p class="has-text-centered">Cvič pro sílu, zdraví a pro zábavu. Svaly, hubnutí a kondice přijdou jako vítaný bonus.</p>-->
+<!--<p class="has-text-centered">Cvič nejtěžší cvik, které zvládneš v nejlepší formě. Neztrácej čas a energii něčím co už umíš.</p>-->
 
 <h2 class="is-family-secondary is-size-4">Co je kalistenika?</h2>
 <h4 class="is-family-secondary is-size-6">Zde je výčet definic, které rád používám:</h4>
@@ -31,12 +37,12 @@ permalink: /kalistenika/
 <div class="columns is-mobile is-centered is-multiline">
   <div class="column is-12-mobile is-5-tablet is-4-desktop">
     <figure class="image is-1by1 is-centered is-rounded">
-      <img class="" src="/assets/img/kali-riegrovy-sady.jpg" alt="">
+      <img data-src="/assets/img/kali-riegrovy-sady.jpg" alt="Hřiště Riegrovy sady" class="lazyload">
     </figure>
   </div>
   <div class="column is-12-mobile is-5-tablet is-4-desktop">
     <figure class="image is-1by1 is-centered is-rounded">
-      <img class="" src="/assets/img/kali-hriste-2.jpg" alt="">
+      <img data-src="/assets/img/kali-hriste-2.jpg" alt="Hřiště Šumava" class="lazyload">
     </figure>
   </div>
 </div>
@@ -55,20 +61,17 @@ permalink: /kalistenika/
 <div class="columns is-mobile is-centered is-multiline">
   <div class="column is-12-mobile is-5-tablet is-4-desktop">
     <figure class="image is-1by1 is-centered is-rounded">
-      <img class="" src="/assets/img/kali-drep.jpg" alt="">
+      <img data-src="/assets/img/kali-drep.jpg" alt="Dřep na jedné noze" class="lazyload">
     </figure>
   </div>
   <div class="column is-12-mobile is-5-tablet is-4-desktop">
     <figure class="image is-1by1 is-centered is-rounded">
-      <img class="" src="/assets/img/kali-front-lever.jpg" alt="">
+      <img data-src="/assets/img/kali-front-lever.jpg" alt="Front lever" class="lazyload">
     </figure>
   </div>
 </div>
 
 <h2 class="is-family-secondary is-size-4">Příklady cviků</h2>
-<div>
-
-</div>
 <p><span class="is-family-secondary is-size-6">Dynamické:</span> kliky, dřepy, shyby, dipy, vznosy - základní pětka</p>
 <p><span class="is-family-secondary is-size-6">Statické:</span> stojky, front lever, back lever, human flag, planche, L sit, plank, kolébka, dragon flag</p>
 <p><span class="is-family-secondary is-size-6">Explozivní:</span> muscle up (absolutní přítah), vysoké shyby, explozivní varianty kliků a dřepů, free style triky</p>
@@ -76,38 +79,27 @@ permalink: /kalistenika/
 <p>Další cviky najdeš v tomto <a href="/kalistenika/cviky/" title="Cviky">feedu cviků</a>.</p>
 <h3 class="is-family-secondary is-size-5 has-text-centered">Progresivní zatížení změnou náklonu</h3>
 <div class="columns">
+  {% for gif in page.pull_gif %}
   <div class="column">
     <figure class="image is-gif is-1by1 is-centered is-rounded">
-      <img src="/assets/gif/pull1.img.gif" alt="">
+      <img data-src="{{ gif }}" alt="Australský přítah - úroveň {{ forloop.index }}" class="lazyload">
       <span class="icon">
         <i class="fa-2x fas fa-play-circle"></i>
       </span>
     </figure>
   </div>
-  <div class="column">
-    <figure class="image is-gif is-1by1 is-centered is-rounded">
-      <img src="/assets/gif/pull2.img.gif" alt="">
-      <span class="icon">
-        <i class="fa-2x fas fa-play-circle"></i>
-      </span>
-    </figure>
-  </div>
-  <div class="column">
-    <figure class="image is-gif is-1by1 is-centered is-rounded">
-      <img src="/assets/gif/pull3.img.gif" alt="">
-      <span class="icon">
-        <i class="fa-2x fas fa-play-circle"></i>
-      </span>
-    </figure>
-  </div>
+  {% endfor %}
 </div>
 
 <h2 class="is-family-secondary is-size-4">Výhody kalisteniky</h2>
-<p>cvičení s vlastní vahou vypadá velice dobře a přirozeným způsobem posiluje svaly a pohybové vzorce člověka, existuje mnoho cviků v mnoha silových variantách, člověk má své tělo pod kontrolou, není
+<p>cvičení s vlastní vahou vypadá velice dobře a přirozeným způsobem posiluje svaly a pohybové vzorce člověka, existuje mnoho cviků v mnoha silových variantách, člověk má své tělo pod kontrolou,
+   není
    potřeba mnoho vybavení - spíše znalosti:), komunita lidí je mnohem přátelštější než ve fitkách (často se venku zapovídáte a poznáte mnoho nových a zajímavých lidí), naučíš se hodně o svém
    těle, tělo se cvičí jako jeden celek, kdy spolupracuje při cvičení více svalů a kloubů</p>
 <h2 class="is-family-secondary is-size-4">Nevýhody kalisteniky</h2>
-<p>bez znalosti lze dělat vše špatně a když člověk neví jak postupovat, tak je i obtížnější progres, málo kvalitních zdrojů informací, z pohledu začátečníka - podceňování techniky (lidí všeobecně vědí
+<p>bez znalosti lze dělat vše špatně a když člověk neví jak postupovat, tak je i obtížnější progres, málo kvalitních zdrojů informací, z pohledu začátečníka - podceňování techniky (lidí
+   všeobecně
+   vědí
    o shybech a klicích a jak přibližně vypadá, ale tím to končí - přitom jsou i u základních cviků některé znalosti velice důležité)</p>
 
 <h2 class="is-family-secondary is-size-5">Doporučení</h2>
@@ -125,9 +117,11 @@ permalink: /kalistenika/
 <h2 class="is-family-secondary is-size-4">Cesta</h2>
 <p>Moje cesta pohybem začala v lednu 2014, kdy jsem ještě s jedním kamarádem došel na první trénink skupiny SebeRevolta Olomouc. Od té doby mě cvičení začalo bavit a chodil jsem snad na všechny
    tréninky co byly. Velké díky patří celé olomoucké partě.</p>
-<p>V té době jsem toho o pohybu a cvičení moc nevěděl a neměl jsem ani žádné cíle nebo ponětí o technice a anatomii. To se změnilo se změnou prostředí, kdy jsem se v roce 2016 přestěhoval do Prahy,
+<p>V té době jsem toho o pohybu a cvičení moc nevěděl a neměl jsem ani žádné cíle nebo ponětí o technice a anatomii. To se změnilo se změnou prostředí, kdy jsem se v roce 2016 přestěhoval do
+   Prahy,
    kde jsem objevil úplně jiný svět.</p>
-<p>Zjistil jsem, že mnoho věci dělám špatně a kvůli tomu jsem se začal vzdělávat a více číst a zajímat se o správný způsob cvičení. Po prvním jednodenním kurzu kalisteniky jsem byl rozhodnutý, že si
+<p>Zjistil jsem, že mnoho věci dělám špatně a kvůli tomu jsem se začal vzdělávat a více číst a zajímat se o správný způsob cvičení. Po prvním jednodenním kurzu kalisteniky jsem byl rozhodnutý,
+   že si
    udělám celou trenérskou akreditaci, kterou jsem dodělal v roce 2019.</p>
 <p>Díky všem za zpětný feedback a inspiraci, moc si toho vážím. :)</p>
 
@@ -139,7 +133,7 @@ permalink: /kalistenika/
 <div class="columns is-mobile is-multiline is-centered">
   <div class="column is-7-mobile is-4-tablet">
     <figure class="image is-1by1 is-centered is-rounded">
-      <img class="" src="/assets/img/kali-palmovka-L-sit.jpg" alt="">
+      <img data-src="/assets/img/kali-palmovka-L-sit.jpg" alt="Nedělní trénink - Palmovka" class="lazyload">
     </figure>
   </div>
   <div class="column is-12-mobile is-8-tablet is-hidden-mobile">
@@ -147,7 +141,7 @@ permalink: /kalistenika/
   </div>
 </div>
 <figure class="image is-rounded is-hidden-tablet">
-  <img class="" src="/assets/img/kali-sr-rigrovy-sady.jpg" alt="">
+  <img data-src="/assets/img/kali-sr-rigrovy-sady.jpg" alt="Nedělní trénink - Riegrovy sady" class="lazyload">
 </figure>
 
 
@@ -159,5 +153,5 @@ permalink: /kalistenika/
 </ul>
 
 <figure class="image is-rounded">
-  <img src="/assets/img/kali-kurz-hromadna.jpg" alt="">
+  <img data-src="/assets/img/kali-kurz-hromadna.jpg" alt="Kurz kalisteniky a streetworkoutu" class="lazyload">
 </figure>

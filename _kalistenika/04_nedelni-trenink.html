@@ -9,8 +9,27 @@ permalink: /kalistenika/nedelni-trenink/
 description: Volný nedělní trénink s partou podle toho, jak se domluvíme
 ---
 
+<!-- todo: pokračovat zde ---------- přidat obrázky pro nedělní trénink -->
 
-<div>Místo: podle domluvy (většinou stromovka nebo Riegrovy sady)</div>
-<div>Čas: Neděle 15:00 (od dubna do listopadu)</div>
-<br>
-<p>Jedná se o spontánní trénink s partou, společná rozcvička a trénink nebo individuálně každý co chce. Hudba, pokec a sdílení :)</p>
+<div class="tab-contents">
+  <div class="tabs is-centered">
+    <ul>
+      <li class="is-active"><a>Info</a></li>
+      <li><a>Galerie</a></li>
+    </ul>
+  </div>
+
+  <div class="contents">
+    <div class="is-active">
+      <p>Jedná se o spontánní trénink s partou, společná rozcvička a trénink nebo individuálně každý co chce. Hudba, pokec a sdílení :)</p>
+
+      <h3 class="is-family-secondary is-size-6">Místo a čas</h3>
+      <div>Místo podle domluvy (většinou Stromovka nebo Riegrovy sady)</div>
+      <div>Neděle 15:00 (od dubna do listopadu)</div>
+    </div>
+    <div>
+      {% assign image_files = site.static_files | where: "galerie_nedelni_trenink", true %}
+      {% include galerie.html image_files=image_files %}
+    </div>
+  </div>
+</div>

@@ -48,15 +48,8 @@ description: Pravidelný ranní trénink kalisteniky pro začínající i pokro�
               src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQGulQFg8aQ_jrrwyw0wvHmsm9w8zceGu27LH5AhaAH3-C8eeJvc3KYcPJn5f7E9j1hgEVAg6YeXlJx/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false"></iframe>
     </div>
     <div>
-      <div class="image-grid is-half">
-        <div class="col">
-          <img data-src="/assets/img/galerie/ranni-treinink/plank riegrovy sady.JPG" alt="plank" class="lazyload">
-          <img data-src="/assets/img/galerie/ranni-treinink/vis rigrovy sady.JPG" alt="vis" class="lazyload">
-        </div>
-        <div class="col">
-          <img data-src="/assets/img/galerie/ranni-treinink/bulharske drepy riegrovy sady.JPG" alt="bulharske drepy" class="lazyload">
-        </div>
-      </div>
+      {% assign image_files = site.static_files | where: "galerie_ranni_trenink", true %}
+      {% include galerie.html image_files=image_files %}
     </div>
   </div>
 </div>
