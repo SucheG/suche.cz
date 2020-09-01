@@ -25,26 +25,26 @@
   },
   {
     "pojem": "PULL",
-    "vyznam": "tah, např. skupina tahových cviků"
+    "vyznam": "česky tah, často se odkazuje na skupinu tahových cviků"
   },
   {
     "pojem": "PUSH / PRESS",
-    "vyznam": "tlak, např. skupina tlakových cviků"
+    "vyznam": "česky tlak, často se odkazuje na skupinu tlakových cviků"
   },
   {
     "pojem": "LATS",
     "vyznam": "zkratka pro široký zádový sval z latinského <em>m. lattissimus dorsi</em>"
   },
   {
-    "pojem": "TUCK",
+    "pojem": "pozice TUCK",
     "vyznam": "pozice těla, kdy jsou nohy pokrčené a zcela přitažená k tělu"
   },
   {
-    "pojem": "STRADDLE",
+    "pojem": "pozice STRADDLE",
     "vyznam": "pozice těla, kdy jsou nohy natažené a roztažené od sebe"
   },
   {
-    "pojem": "FULL",
+    "pojem": "pozice FULL",
     "vyznam": "pozice těla, kdy jsou nohy zcela natažené, proponuté a spojené k sobě"
   },
   {
@@ -53,7 +53,7 @@
   },
   {
     "pojem": "ABS",
-    "vyznam": "zkratka pro abdominal muscles - svaly břišní stěny zahrnující přímé, boční, příčné, šíkmé svaly"
+    "vyznam": "zkratka pro abdominal muscles - svaly břišní stěny zahrnující přímé, boční, příčné, šíkmé břišní svaly"
   },
   {
     "_pojem": "PLYOMETRIE",
@@ -65,7 +65,7 @@
   },
   {
     "pojem": "IZOMETRIE",
-    "vyznam": "také znamé jako statika - je to typ svalové práce, kdy tělo v jedné pozici pod tenzí po delší dobu, to vede k vyššímu napětí i práci. Příklady cviků: lehčí: L sit, stojka, spodní pozice kliku, plank; težší: back lever, front lever, planche"
+    "vyznam": "také znamé jako statika - je to typ svalové práce, kdy tělo v jedné pozici pod tenzí po delší dobu (záleží na obtížnosti - může být i jen pár sekund), to vede k vyššímu napětí i práci. Příklady cviků: lehčí: L sit, stojka, spodní pozice kliku, plank; težší: back lever, front lever, planche"
   },
   {
     "pojem": "HYPERTROFIE",
@@ -73,7 +73,7 @@
   },
   {
     "pojem": "ATROFIE",
-    "vyznam": "úbytek buňek nebo zmenšení daného orgánu, např. u svalu - obytek nebo zmenšení svalů - opak hypertrofie"
+    "vyznam": "úbytek buňek nebo zmenšení daného orgánu, např. u svalu - úbytek nebo zmenšení svalů - opak hypertrofie"
   },
   {
     "pojem": "TOT",
@@ -109,11 +109,11 @@
   },
   {
     "pojem": "KRUHOVÝ TRÉNINK",
-    "vyznam": "trénink u kterého se mění stanoviště a lidé se točí tzv. v kruhu a vystřídají se na každém stanocišti, často jako skupinový trénink a také v podobě intervalového tréninku"
+    "vyznam": "trénink u kterého se mění stanoviště a lidé se točí tzv. v kruhu a vystřídají se na každém stanovišti, často jako skupinový trénink a také může mít podobu intervalového tréninku"
   },
   {
     "pojem": "INTERVALOVÝ TRÉNINK",
-    "vyznam": "trénink řízeny časovým itervalem, předem se nastaví časové úseky pro dobu tréninku a odpočinku, po určitou dobu"
+    "vyznam": "trénink řízený časovým itervalem, předem se nastaví časové úseky pro dobu tréninku a odpočinku, po určitou dobu"
   },
   {
     "pojem": "TABATA",
@@ -125,7 +125,11 @@
   },
   {
     "pojem": "FREESTYLE",
-    "vyznam": "explozivnní nebo jinak nárožný druh cvíčení, kdy je potřeba velká síla pro provedení náročnách prvků - často jako soutšžní disciplína ve street workoutu"
+    "vyznam": "explozivní nebo jinak náročný druh cvíčení, kdy je potřeba velká síla pro provedení náročných prvků - často jako soutěžní disciplína ve street workoutu nebo exibiční vystoupení"
+  },
+  {
+    "pojem": "REST / REST DAY",
+    "vyznam": "volno nebo volný den bez tréninku, kdy by mělo tělo odpočívat a regenerovat"
   },
   {
     "pojem": "WEIGHTED",
