@@ -1,0 +1,21 @@
+---
+layout: base
+title: Hry
+subtitle: učení hrou
+img: /assets/img/suche-pro.jpg
+is_active_hry: is-active
+permalink: /hry/
+---
+
+<h2 class="is-family-secondary is-size-4">Hry</h2>
+<div class="columns is-multiline image-box">
+  {% for item in site.hry %}
+  <div class="column is-6 same-height">
+    <a href="{{ item.url }}" class="notification" style="background-image: url('{{ item.img }}');">
+      <div class="bg"></div>
+      <h3 class="is-family-secondary is-size-5">{{ item.title }}</h3>
+      <p class="is-size-6">{{ item.description }}</p>
+    </a>
+  </div>
+  {% endfor %}
+</div>

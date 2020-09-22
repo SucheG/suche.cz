@@ -4,6 +4,10 @@ collections:
     output: true
     permalink: /:name
 
+  hry:
+    output: true
+    permalink: /:name
+
 
 instagram: https://www.instagram.com/suche.cz
 facebook: https://facebook.com/suche.cz

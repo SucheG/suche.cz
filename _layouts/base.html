@@ -125,6 +125,13 @@ layout: compress
       <span>Pro<span class="is-hidden-mobile">gramování</span></span>
     </a>
 
+<!--    <a class="navbar-item {{ page.is_active_hry }}" href="/hry/">-->
+<!--      <span class="icon">-->
+<!--        <i class="fas fa-gamepad"></i>-->
+<!--      </span>-->
+<!--      <span>&nbsp;Hry</span>-->
+<!--    </a>-->
+
     <a class="navbar-item {{ page.is_active_blog }}" href="/blog/">
       <span class="icon">
         <i class="fas fa-rss"></i>
@@ -172,9 +179,17 @@ layout: compress
       </span>
     </a>
   </div>
-  <div><a href="https://www.pullup.cz" class="has-text-grey-dark">Pullup.cz</a></div>
+
+  <h4>Zpřátelené weby</h4>
+  <div class="columns is-multiline is-centered is-mobile">
+    <a href="https://mariadomo.cz/" rel="nofollow" target="_blank" class="column is-narrow has-text-grey-dark">Maria Domo - specialista na výživu</a>
+    <a href="https://www.pullup.cz/" rel="nofollow" target="_blank" class="column is-narrow has-text-grey-dark">Pullup.cz</a>
+  </div>
+
+
 </section>
 
+{% if jekyll.environment == "development" %}
 <div style="position: fixed; top: 0; left: 0; z-index: 50; display: none;">
   <div class="tags">
     <div class="tag is-black is-hidden-tablet">mobile</div>
@@ -184,9 +199,11 @@ layout: compress
     <div class="tag is-black is-hidden-widescreen-only is-hidden-desktop-only is-hidden-touch">fullhd</div>
   </div>
 </div>
+{% endif %}
+
 
 <script src="https://cdn.jsdelivr.net/npm/minilazyload@2.3.3/dist/minilazyload.min.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=NodeList.prototype.forEach"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CNodeList.prototype.forEach"></script>
 <script src="/assets/js/main.js?v={{ site.time | date: '%Y%m%d' }}"></script>
 
 </body>

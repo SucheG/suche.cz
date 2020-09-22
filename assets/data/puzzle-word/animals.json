@@ -1,0 +1,577 @@
+[
+  {
+    "en": "alligator",
+    "cz": "aligátor",
+    "level": 1
+  },
+  {
+    "en": "ant",
+    "cz": "mravenec",
+    "level": 1
+  },
+  {
+    "en": "anteater",
+    "cz": "mravenečník",
+    "level": 2
+  },
+  {
+    "en": "antelope",
+    "cz": "antilopa",
+    "level": 2
+  },
+  {
+    "en": "arctic fox",
+    "cz": "polární liška",
+    "level": 2
+  },
+  {
+    "en": "armadillo",
+    "cz": "pásovec",
+    "level": 4
+  },
+  {
+    "en": "badger",
+    "cz": "jezevec",
+    "level": 4
+  },
+  {
+    "en": "bat",
+    "cz": "netopýr",
+    "level": 1
+  },
+  {
+    "en": "beaver",
+    "cz": "bobr",
+    "level": 4
+  },
+  {
+    "en": "bee",
+    "cz": "včela",
+    "level": 1
+  },
+  {
+    "en": "beetle",
+    "cz": "brouk",
+    "level": 2
+  },
+  {
+    "en": "bird",
+    "cz": "pták",
+    "level": 1
+  },
+  {
+    "en": "black bear",
+    "cz": "černý medvěd",
+    "level": 2
+  },
+  {
+    "en": "buffalo",
+    "cz": "buvol",
+    "level": 3
+  },
+  {
+    "en": "butterfly",
+    "cz": "motýl",
+    "level": 1
+  },
+  {
+    "en": "camel",
+    "cz": "velbloud",
+    "level": 1
+  },
+  {
+    "en": "cat",
+    "cz": "kočka",
+    "level": 1
+  },
+  {
+    "en": "cicada",
+    "cz": "cikáda",
+    "level": 4
+  },
+  {
+    "en": "clam",
+    "cz": "škeble",
+    "level": 4
+  },
+  {
+    "en": "cockatoo",
+    "cz": "kakadu",
+    "level": 4
+  },
+  {
+    "en": "cockroach",
+    "cz": "šváb",
+    "level": 4
+  },
+  {
+    "en": "cow",
+    "cz": "kráva",
+    "level": 1
+  },
+  {
+    "en": "coyote",
+    "cz": "kojot",
+    "level": 2
+  },
+  {
+    "en": "crab",
+    "cz": "krab",
+    "level": 1
+  },
+  {
+    "en": "cricket",
+    "cz": "cvrček",
+    "level": 3
+  },
+  {
+    "en": "crow",
+    "cz": "vrána",
+    "level": 2
+  },
+  {
+    "en": "deer",
+    "cz": "jelen",
+    "level": 4
+  },
+  {
+    "en": "dog",
+    "cz": "pes",
+    "level": 1
+  },
+  {
+    "en": "dolphin",
+    "cz": "delfín",
+    "level": 1
+  },
+  {
+    "en": "donkey",
+    "cz": "osel",
+    "level": 2
+  },
+  {
+    "en": "dove",
+    "cz": "holubice",
+    "level": 3
+  },
+  {
+    "en": "dragonfly",
+    "cz": "vážka",
+    "level": 2
+  },
+  {
+    "en": "duck",
+    "cz": "kachna",
+    "level": 1
+  },
+  {
+    "en": "eagle",
+    "cz": "orel",
+    "level": 2
+  },
+  {
+    "en": "eel",
+    "cz": "úhoř",
+    "level": 4
+  },
+  {
+    "en": "elephant",
+    "cz": "slon",
+    "level": 1
+  },
+  {
+    "en": "ferret",
+    "cz": "fretka",
+    "level": 3
+  },
+  {
+    "en": "fish",
+    "cz": "ryba",
+    "level": 1
+  },
+  {
+    "en": "fly",
+    "cz": "moucha",
+    "level": 2
+  },
+  {
+    "en": "fox",
+    "cz": "liška",
+    "level": 1
+  },
+  {
+    "en": "frog",
+    "cz": "žába",
+    "level": 1
+  },
+  {
+    "en": "gazelle",
+    "cz": "gazela",
+    "level": 2
+  },
+  {
+    "en": "goat",
+    "cz": "koza",
+    "level": 2
+  },
+  {
+    "en": "grasshopper",
+    "cz": "saranče",
+    "level": 3
+  },
+  {
+    "en": "grizzly bear",
+    "cz": "grizzly",
+    "level": 2
+  },
+  {
+    "en": "groundhog",
+    "cz": "svišť",
+    "level": 4
+  },
+  {
+    "en": "guinea pig",
+    "cz": "morče",
+    "level": 3
+  },
+  {
+    "en": "hedgehog",
+    "cz": "ježek",
+    "level": 3
+  },
+  {
+    "en": "hen",
+    "cz": "slepice",
+    "level": 3
+  },
+  {
+    "en": "hippopotamus",
+    "cz": "hroch",
+    "level": 2
+  },
+  {
+    "en": "horse",
+    "cz": "kůň",
+    "level": 1
+  },
+  {
+    "en": "hummingbird",
+    "cz": "kolibřík",
+    "level": 4
+  },
+  {
+    "en": "hyena",
+    "cz": "hyena",
+    "level": 1
+  },
+  {
+    "en": "chameleon",
+    "cz": "chameleón",
+    "level": 1
+  },
+  {
+    "en": "cheetah",
+    "cz": "gepard",
+    "level": 2
+  },
+  {
+    "en": "chicken",
+    "cz": "kuře",
+    "level": 1
+  },
+  {
+    "en": "koala",
+    "cz": "koala",
+    "level": 1
+  },
+  {
+    "en": "leopard",
+    "cz": "leopard",
+    "level": 1
+  },
+  {
+    "en": "lion",
+    "cz": "lev",
+    "level": 1
+  },
+  {
+    "en": "llama",
+    "cz": "lama",
+    "level": 1
+  },
+  {
+    "en": "lobster",
+    "cz": "humr",
+    "level": 3
+  },
+  {
+    "en": "lynx",
+    "cz": "rys",
+    "level": 3
+  },
+  {
+    "en": "meerkat",
+    "cz": "surikata",
+    "level": 4
+  },
+  {
+    "en": "mole",
+    "cz": "krtek",
+    "level": 4
+  },
+  {
+    "en": "moose",
+    "cz": "los",
+    "level": 4
+  },
+  {
+    "en": "moth",
+    "cz": "mol",
+    "level": 3
+  },
+  {
+    "en": "mouse",
+    "cz": "myš",
+    "level": 1
+  },
+  {
+    "en": "octopus",
+    "cz": "chobotnice",
+    "level": 2
+  },
+  {
+    "en": "orangutan",
+    "cz": "orangutan",
+    "level": 1
+  },
+  {
+    "en": "orca",
+    "cz": "kosatka",
+    "level": 3
+  },
+  {
+    "en": "ostrich",
+    "cz": "pštros",
+    "level": 3
+  },
+  {
+    "en": "owl",
+    "cz": "sova",
+    "level": 2
+  },
+  {
+    "en": "panda bear",
+    "cz": "panda",
+    "level": 1
+  },
+  {
+    "en": "panther",
+    "cz": "panter",
+    "level": 1
+  },
+  {
+    "en": "parrot",
+    "cz": "papoušek",
+    "level": 2
+  },
+  {
+    "en": "penguin",
+    "cz": "tučňák",
+    "level": 2
+  },
+  {
+    "en": "pig",
+    "cz": "prase",
+    "level": 1
+  },
+  {
+    "en": "pigeon",
+    "cz": "holub",
+    "level": 3
+  },
+  {
+    "en": "polar bear",
+    "cz": "lední medvěd",
+    "level": 2
+  },
+  {
+    "en": "rabbit",
+    "cz": "králík",
+    "level": 1
+  },
+  {
+    "en": "raccoon",
+    "cz": "mýval",
+    "level": 2
+  },
+  {
+    "en": "reindeer",
+    "cz": "sob",
+    "level": 4
+  },
+  {
+    "en": "robin",
+    "cz": "červenka",
+    "level": 4
+  },
+  {
+    "en": "sea lion",
+    "cz": "lachtan",
+    "level": 3
+  },
+  {
+    "en": "sea otter",
+    "cz": "mořská vydra",
+    "level": 3
+  },
+  {
+    "en": "seagull",
+    "cz": "racek",
+    "level": 3
+  },
+  {
+    "en": "seahorse",
+    "cz": "mořský koník",
+    "level": 2
+  },
+  {
+    "en": "seal",
+    "cz": "tuleň",
+    "level": 2
+  },
+  {
+    "en": "shark",
+    "cz": "žralok",
+    "level": 1
+  },
+  {
+    "en": "sheep",
+    "cz": "ovce",
+    "level": 1
+  },
+  {
+    "en": "shrimp",
+    "cz": "krevety",
+    "level": 2
+  },
+  {
+    "en": "slug",
+    "cz": "slimák",
+    "level": 2
+  },
+  {
+    "en": "snail",
+    "cz": "hlemýžď",
+    "level": 2
+  },
+  {
+    "en": "snake",
+    "cz": "had",
+    "level": 1
+  },
+  {
+    "en": "sparrow",
+    "cz": "vrabec",
+    "level": 2
+  },
+  {
+    "en": "squid",
+    "cz": "oliheň",
+    "level": 3
+  },
+  {
+    "en": "squirrel",
+    "cz": "veverka",
+    "level": 3
+  },
+  {
+    "en": "starfish",
+    "cz": "mořská hvězdice",
+    "level": 2
+  },
+  {
+    "en": "swan",
+    "cz": "labuť",
+    "level": 3
+  },
+  {
+    "en": "tiger",
+    "cz": "tygr",
+    "level": 1
+  },
+  {
+    "en": "turkey",
+    "cz": "krocan",
+    "level": 2
+  },
+  {
+    "en": "turtle",
+    "cz": "želva",
+    "level": 2
+  },
+  {
+    "en": "wallaby",
+    "cz": "klokan",
+    "level": 4
+  },
+  {
+    "en": "walrus",
+    "cz": "mrož",
+    "level": 3
+  },
+  {
+    "en": "wasp",
+    "cz": "vosa",
+    "level": 3
+  },
+  {
+    "en": "water buffalo",
+    "cz": "vodní buvol",
+    "level": 2
+  },
+  {
+    "en": "weasel",
+    "cz": "lasička",
+    "level": 3
+  },
+  {
+    "en": "weaver",
+    "cz": "tkadlec",
+    "level": 4
+  },
+  {
+    "en": "whale",
+    "cz": "velryba",
+    "level": 3
+  },
+  {
+    "en": "wildcat",
+    "cz": "divoká kočka",
+    "level": 2
+  },
+  {
+    "en": "wilddog",
+    "cz": "divoký pes",
+    "level": 2
+  },
+  {
+    "en": "wolf",
+    "cz": "vlk",
+    "level": 1
+  },
+  {
+    "en": "wolverine",
+    "cz": "rosomák",
+    "level": 3
+  },
+  {
+    "en": "wombat",
+    "cz": "wombat",
+    "level": 3
+  },
+  {
+    "en": "woodpecker",
+    "cz": "datel",
+    "level": 3
+  }
+]
