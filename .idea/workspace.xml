@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="36fab717-3a53-4a47-be5d-37f65d316a01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/hry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/hry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/hry/puzzle-word/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/hry/puzzle-word/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/kalistenika/cviky/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/kalistenika/cviky/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/kalistenika/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/kalistenika/index.html" afterDir="false" />
@@ -96,7 +97,7 @@
       <workItem from="1570171641404" duration="1308000" />
       <workItem from="1597167567160" duration="30000" />
       <workItem from="1599986890873" duration="6738000" />
-      <workItem from="1600104965872" duration="10956000" />
+      <workItem from="1600104965872" duration="11861000" />
     </task>
     <servers />
   </component>
