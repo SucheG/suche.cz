@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="36fab717-3a53-4a47-be5d-37f65d316a01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_hry/01_puzzle-word.html" beforeDir="false" afterPath="$PROJECT_DIR$/_hry/01_puzzle-word.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-09-23-jak-se-naucit-shyb.html" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-09-23-jak-se-naucit-shyb.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/jak-se-naucit-shyb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/jak-se-naucit-shyb/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/hry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/hry/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/hry/puzzle-word/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/hry/puzzle-word/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
@@ -19,9 +20,6 @@
       <change beforePath="$PROJECT_DIR$/_site/kalistenika/slovnik/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/kalistenika/slovnik/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/programovani/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/programovani/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_tools/suche_bulma/sass/bulma.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_tools/suche_bulma/sass/bulma.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +112,8 @@
       <workItem from="1597167567160" duration="30000" />
       <workItem from="1599986890873" duration="6738000" />
       <workItem from="1600104965872" duration="21188000" />
-      <workItem from="1600971123702" duration="8334000" />
+      <workItem from="1600971123702" duration="8928000" />
+      <workItem from="1600982137938" duration="854000" />
     </task>
     <servers />
   </component>
