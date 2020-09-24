@@ -1,0 +1,156 @@
+---
+layout: base
+title: Jak se naučit shyb
+subtitle: 30-ti denní program pro získání shybu
+permalink: /blog/jak-se-naucit-shyb/
+img: /assets/img/blog/jak-se-naucit-shyb.jpg
+is_active_blog: is-active
+description: Jak postupovat v progresu shybu, 12 tréninků.
+---
+
+{% for cislo in page.xxx %}
+{% for x in cislo %}
+<div>{{ x }}</div>
+{% endfor %}
+{% endfor %}
+
+<p>Hned na začátek řeknu, že tento tréninkový plán je od Petra Skokana ve spolupráci s Fubo.</p>
+<p>Zde je 12 tréninků, které se cvičí Po, St, Pa po dobu 4 týdnů: 3 trénikny týdně * 4 týdny = 12 tréninků.</p>
+<p>Potřebné pomůcky: hrazda, posilovací gumy, kruhy nebo trx</p>
+
+<div class="tab-contents">
+  <div class="tabs is-centered">
+    <ul>
+      {% for item in site.data.jak_se_naucit_shyb %}
+      <li class="{% if forloop.index == 1 %}is-active{% endif %}"><a>{{ forloop.index }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="contents">
+    {% for item in site.data.jak_se_naucit_shyb %}
+    {% assign trenink_index = forloop.index %}
+    <div class="{% if forloop.index == 1 %}is-active{% endif %} has-spaced-header trenink-div" id="trenink{{ forloop.index }}">
+      <h3>Trénink č. {{ forloop.index }} <span class="icon has-text-grey trenink-check"><i class="far fa-check-square"></i></span></h3>
+      <p>{{ item.text }}</p>
+      {% for cvik in item.cviky %}
+      {% assign cvik_index = forloop.index %}
+      <h4>{{ cvik }}</h4>
+      {% for s in (1..item.serie) %}
+      <div><label><input type="checkbox" class="trenink-checkbox" id="t{{ trenink_index }}c{{ cvik_index }}s{{ s }}"> {{ s }}. série</label></div>
+      {% endfor %}
+      {% endfor %}
+      <br>
+      <p class="has-text-centered is-hidden hotovo-text"><span class="icon has-text-primary"><i class="fas fa-check-square"></i></span> Tento trénink jste dokončili <span class="hotovo-datum"></span>
+      </p>
+      <div class="buttons is-centered">
+        <div class="button is-link button-reset">Reset</div>
+        <div class="button is-primary button-hotovo">Zapsat jako hotové</div>
+      </div>
+      <p class="help has-text-centered">údaje jsou uloženy jen v rámci vašeho prohlížeče</p>
+      <p class="help has-text-centered">zdroj: https://www.fubo.cz/treninky/30denni-plan-12-treninku-shyb/</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  let serieKey = 'serieIds';
+  let treninkKey = 'treninkIds';
+  let serieIds = JSON.parse(localStorage.getItem(serieKey) || '[]');
+  let treninkIds = JSON.parse(localStorage.getItem(treninkKey) || '{}');
+
+  document.querySelectorAll('.trenink-checkbox').forEach(function (checkbox) {
+    if (serieIds.indexOf(checkbox.id) > -1) {
+      checkbox.checked = true;
+    }
+
+    checkbox.addEventListener('change', function (ev) {
+      if (checkbox.checked) {
+        serieIds.push(checkbox.id);
+      } else {
+        let index = serieIds.indexOf(checkbox.id);
+        if (index > -1) {
+          serieIds.splice(index, 1);
+        }
+      }
+      localStorage.setItem(serieKey, JSON.stringify(serieIds));
+    })
+  });
+
+  function _checkAll(treninkDiv) {
+    treninkDiv.querySelectorAll('.trenink-checkbox').forEach(function (checkbox) {
+      checkbox.checked = true;
+      serieIds.push(checkbox.id);
+    });
+    localStorage.setItem(serieKey, JSON.stringify(serieIds));
+  }
+
+  function setTrenink(treninkDiv, finish) {
+    let hotovoText = treninkDiv.querySelector('.hotovo-text');
+    let hotovoDatum = treninkDiv.querySelector('.hotovo-datum');
+    let treninkCheck = treninkDiv.querySelector('.trenink-check');
+    let buttonHotovo = treninkDiv.querySelector('.button-hotovo');
+    if (finish) {
+      hotovoDatum.textContent = new Date(treninkIds[treninkDiv.id]).toLocaleString();
+      hotovoText.classList.remove('is-hidden');
+      treninkCheck.classList.remove('has-text-grey');
+      treninkCheck.classList.add('has-text-primary');
+      buttonHotovo.setAttribute('disabled', '');
+    } else {
+      hotovoText.classList.add('is-hidden');
+      treninkCheck.classList.add('has-text-grey');
+      treninkCheck.classList.remove('has-text-primary');
+      buttonHotovo.removeAttribute('disabled');
+    }
+  }
+
+  function finishTrenink(treninkDiv) {
+    treninkIds[treninkDiv.id] = new Date();
+    localStorage.setItem(treninkKey, JSON.stringify(treninkIds));
+    setTrenink(treninkDiv, true);
+  }
+
+  function resetTrenink(treninkDiv) {
+    treninkDiv.querySelectorAll('.trenink-checkbox').forEach(function (checkbox) {
+      checkbox.checked = false;
+      let index = serieIds.indexOf(checkbox.id);
+      if (index > -1) {
+        serieIds.splice(index, 1);
+      }
+    });
+
+    delete treninkIds[treninkDiv.id];
+    localStorage.setItem(treninkKey, JSON.stringify(treninkIds));
+    localStorage.setItem(serieKey, JSON.stringify(serieIds));
+    setTrenink(treninkDiv, false);
+  }
+
+  document.querySelectorAll('.trenink-div').forEach(function (treninkDiv) {
+    let checkboxes = treninkDiv.querySelectorAll('.trenink-checkbox');
+    let buttonHotovo = treninkDiv.querySelector('.button-hotovo');
+    let buttonReset = treninkDiv.querySelector('.button-reset');
+
+    if (treninkIds.hasOwnProperty(treninkDiv.id)) {
+      setTrenink(treninkDiv, true);
+    }
+
+    buttonReset.addEventListener('click', function (ev) {
+      resetTrenink(treninkDiv);
+    });
+
+    buttonHotovo.addEventListener('click', function (ev) {
+      let nedokoncene = 0;
+      checkboxes.forEach(function (checkbox) {
+        if (!checkbox.checked) {
+          nedokoncene += 1;
+        }
+      });
+      if (nedokoncene) {
+        alert('Dokončete všechny cviky v tréninku');
+      } else {
+        finishTrenink(treninkDiv);
+      }
+    });
+  });
+</script>
