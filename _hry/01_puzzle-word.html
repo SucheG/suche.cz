@@ -11,6 +11,14 @@ description: Procvičování anglických slov. Puzzle Word je vyúková hra, kde
 <div class="field is-grouped is-grouped-centered">
   <div class="control">
     <div class="select is-small">
+      <select id="pw-lang">
+        <option value="en">EN</option>
+        <option value="cz">CZ</option>
+      </select>
+    </div>
+  </div>
+  <div class="control">
+    <div class="select is-small">
       <select id="pw-kategorie">
         <option value="animals">Animals</option>
         <option value="clothes">Clothes</option>
@@ -36,7 +44,8 @@ description: Procvičování anglických slov. Puzzle Word je vyúková hra, kde
 
 <div class="columns is-multiline is-mobile has-small-gap puzzle-word" id="main"></div>
 
-<p class="has-text-centered">Obrázky v puzzle jsou z <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+<p class="has-text-centered">Obrázky v puzzle jsou z <a href="https://unsplash.com/" target="_blank">Unsplash</a> a slovíčka z <a href="https://www.manythings.org/vocabulary/lists/c/" target="_blank">Manythings.org</a>
+</p>
 
 <div class="modal" id="puzzle-img-modal">
   <div class="modal-background"></div>
