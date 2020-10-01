@@ -1,4 +1,15 @@
-// GIF animation
+function createElement(tag, attrs, parent, textContent) {
+  var element = document.createElement(tag);
+  attrs.forEach(function (attr) {
+    var name_val = attr.split('=');
+    element.setAttribute(name_val[0], name_val[1]);
+  });
+  if (parent) parent.appendChild(element);
+  if (textContent) element.textContent = textContent;
+  return element;
+}
+
+// GIF animation //
 
 function GIF(parent) {
   this.parent = parent;
@@ -7,7 +18,7 @@ function GIF(parent) {
   this.icon_i = parent.querySelector('.icon i');
   this.isPlaying = false;
   this.gifLoaded = false;
-  let T = this;
+  var T = this;
 
   GIF.ALL.push(this);
 
@@ -120,13 +131,15 @@ if (window.addEventListener) {
 
 // Modals
 function showModal(id, func) {
-  document.querySelector('#' + id).classList.add('is-active');
-  if (func) func();
+  var modal = document.querySelector('#' + id);
+  modal.classList.add('is-active');
+  if (func) func(modal);
 }
 
 function hideModal(id, func) {
-  document.querySelector('#' + id).classList.remove('is-active');
-  if (func) func();
+  var modal = document.querySelector('#' + id);
+  modal.classList.remove('is-active');
+  if (func) func(modal);
 }
 
 // Modals init

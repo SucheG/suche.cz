@@ -88,13 +88,13 @@ layout: compress
   </div>
 </section>
 
-<nav class="navbar is-black" role="navigation" aria-label="main navigation" style="position: -webkit-sticky; position: sticky; top: 0;">
+<nav class="navbar is-black is-unselectable" role="navigation" aria-label="main navigation" style="position: -webkit-sticky; position: sticky; top: 0;">
   <div class="navbar-brand is-family-secondary is-centered">
     <a class="navbar-item {{ page.is_active_index }}" href="/">
       <span class="icon">
         <i class="fas fa-home"></i>
       </span>
-      <span>Úvod</span>
+      <span class="is-hidden-mobile">Úvod</span>
     </a>
     <div class="dropdown is-hoverable" style="cursor: pointer;"><!-- aby vyplnil celou plochu -->
                                                                 <!-- link pro non touch aby se při clicku dostal na link, pro telefony nelze -> hover vs click !!! v js se nastavuje na první touch :) -->
@@ -140,7 +140,7 @@ layout: compress
       <span class="icon">
         <i class="fas fa-rss"></i>
       </span>
-      <span>Blog</span>
+      <span class="is-hidden-mobile">Blog</span>
     </a>
   </div>
 </nav>

@@ -1,0 +1,217 @@
+[
+  {
+    "en": "ankle",
+    "cz": "kotník",
+    "level": 2
+  },
+  {
+    "en": "arm",
+    "cz": "paže",
+    "level": 1
+  },
+  {
+    "en": "back",
+    "cz": "zadní",
+    "level": 2
+  },
+  {
+    "en": "beard",
+    "cz": "vousy",
+    "level": 4
+  },
+  {
+    "en": "blood",
+    "cz": "krev",
+    "level": 1
+  },
+  {
+    "en": "body",
+    "cz": "tělo",
+    "level": 1
+  },
+  {
+    "en": "bone",
+    "cz": "kost",
+    "level": 1
+  },
+  {
+    "en": "brain",
+    "cz": "mozek",
+    "level": 1
+  },
+  {
+    "en": "cheek",
+    "cz": "tvář",
+    "level": 3
+  },
+  {
+    "en": "chest",
+    "cz": "hruď",
+    "level": 2
+  },
+  {
+    "en": "chin",
+    "cz": "brada",
+    "level": 2
+  },
+  {
+    "en": "ear",
+    "cz": "ucho",
+    "level": 1
+  },
+  {
+    "en": "elbow",
+    "cz": "loket",
+    "level": 1
+  },
+  {
+    "en": "eye",
+    "cz": "oko",
+    "level": 1
+  },
+  {
+    "en": "face",
+    "cz": "tvář",
+    "level": 1
+  },
+  {
+    "en": "feet",
+    "cz": "chodidla",
+    "level": 1
+  },
+  {
+    "en": "finger",
+    "cz": "prst",
+    "level": 1
+  },
+  {
+    "en": "foot",
+    "cz": "chodidlo",
+    "level": 1
+  },
+  {
+    "en": "hair",
+    "cz": "vlasy",
+    "level": 1
+  },
+  {
+    "en": "hand",
+    "cz": "ruka",
+    "level": 1
+  },
+  {
+    "en": "head",
+    "cz": "hlava",
+    "level": 1
+  },
+  {
+    "en": "heart",
+    "cz": "srdce",
+    "level": 1
+  },
+  {
+    "en": "hip",
+    "cz": "boky",
+    "level": 3
+  },
+  {
+    "en": "knee",
+    "cz": "koleno",
+    "level": 2
+  },
+  {
+    "en": "leg",
+    "cz": "noha",
+    "level": 1
+  },
+  {
+    "en": "lip",
+    "cz": "ret",
+    "level": 2
+  },
+  {
+    "en": "moustache",
+    "cz": "knír",
+    "level": 3
+  },
+  {
+    "en": "mouth",
+    "cz": "pusa",
+    "level": 1
+  },
+  {
+    "en": "muscle",
+    "cz": "sval",
+    "level": 1
+  },
+  {
+    "en": "nail",
+    "cz": "nehet",
+    "level": 2
+  },
+  {
+    "en": "neck",
+    "cz": "krk",
+    "level": 1
+  },
+  {
+    "en": "nose",
+    "cz": "nos",
+    "level": 1
+  },
+  {
+    "en": "shoulder",
+    "cz": "rameno",
+    "level": 1
+  },
+  {
+    "en": "skin",
+    "cz": "kůže",
+    "level": 2
+  },
+  {
+    "en": "stomach",
+    "cz": "žaludek",
+    "level": 1
+  },
+  {
+    "en": "teeth",
+    "cz": "zuby",
+    "level": 1
+  },
+  {
+    "en": "throat",
+    "cz": "hrdlo",
+    "level": 3
+  },
+  {
+    "en": "thumb",
+    "cz": "palec",
+    "level": 2
+  },
+  {
+    "en": "thumbs",
+    "cz": "Palce",
+    "level": 2
+  },
+  {
+    "en": "toe",
+    "cz": "prst",
+    "level": 1
+  },
+  {
+    "en": "tongue",
+    "cz": "jazyk",
+    "level": 2
+  },
+  {
+    "en": "tooth",
+    "cz": "zub",
+    "level": 1
+  },
+  {
+    "en": "wrist",
+    "cz": "zápěstí",
+    "level": 3
+  }
+]

@@ -32,8 +32,9 @@ body .content table {
   }
 }
 
-
+//
 @import "../node_modules/bulma/bulma.sass";
+@import "puzzle-word";
 
 .content p a {
   color: unset;
@@ -49,7 +50,7 @@ body .content table {
 a.tag:hover {
   text-decoration: none;
 }
-
+//
 .navbar.is-black .navbar-item {
   &.is-active {
     border-bottom: 3px solid #fff;
@@ -176,7 +177,7 @@ figure.image.is-gif {
 .content figure {
   margin: 0 !important;
 }
-
+////
 .navbar-item .dropdown-menu {
   padding-top: 10px;
 }
@@ -243,4 +244,9 @@ figure.image.is-gif {
   margin-top: .8rem;
   margin-bottom: .3rem;
 }
-//
+
+
+.columns.has-small-gap .column {
+  padding: .25rem;
+}
+

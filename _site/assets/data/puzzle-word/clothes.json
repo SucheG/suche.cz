@@ -1,0 +1,197 @@
+[
+  {
+    "en": "belt",
+    "cz": "pás",
+    "level": 2
+  },
+  {
+    "en": "blouse",
+    "cz": "halenka",
+    "level": 3
+  },
+  {
+    "en": "boots",
+    "cz": "boty",
+    "level": 2
+  },
+  {
+    "en": "cap",
+    "cz": "víčko",
+    "level": 2
+  },
+  {
+    "en": "cardigan",
+    "cz": "svetr",
+    "level": 2
+  },
+  {
+    "en": "coat",
+    "cz": "kabát",
+    "level": 2
+  },
+  {
+    "en": "dress",
+    "cz": "šaty",
+    "level": 1
+  },
+  {
+    "en": "gloves",
+    "cz": "rukavice",
+    "level": 1
+  },
+  {
+    "en": "hat",
+    "cz": "čepice",
+    "level": 1
+  },
+  {
+    "en": "jacket",
+    "cz": "Bunda",
+    "level": 1
+  },
+  {
+    "en": "jeans",
+    "cz": "džíny",
+    "level": 1
+  },
+  {
+    "en": "jumper",
+    "cz": "bunda",
+    "level": 2
+  },
+  {
+    "en": "mini-skirt",
+    "cz": "mini sukně",
+    "level": 1
+  },
+  {
+    "en": "overalls",
+    "cz": "montérky",
+    "level": 3
+  },
+  {
+    "en": "overcoat",
+    "cz": "kabát",
+    "level": 3
+  },
+  {
+    "en": "pajamas",
+    "cz": "pyžama",
+    "level": 1
+  },
+  {
+    "en": "pants",
+    "cz": "kalhoty",
+    "level": 2
+  },
+  {
+    "en": "pantyhose",
+    "cz": "punčocháče",
+    "level": 3
+  },
+  {
+    "en": "raincoat",
+    "cz": "pláštěnka",
+    "level": 3
+  },
+  {
+    "en": "scarf",
+    "cz": "šátek",
+    "level": 2
+  },
+  {
+    "en": "shirt",
+    "cz": "košile",
+    "level": 1
+  },
+  {
+    "en": "shoes",
+    "cz": "obuv",
+    "level": 1
+  },
+  {
+    "en": "shorts",
+    "cz": "šortky",
+    "level": 1
+  },
+  {
+    "en": "skirt",
+    "cz": "sukně",
+    "level": 1
+  },
+  {
+    "en": "slacks",
+    "cz": "kalhotky",
+    "level": 3
+  },
+  {
+    "en": "slippers",
+    "cz": "bačkory",
+    "level": 2
+  },
+  {
+    "en": "socks",
+    "cz": "ponožky",
+    "level": 1
+  },
+  {
+    "en": "stockings",
+    "cz": "punčochy",
+    "level": 3
+  },
+  {
+    "en": "suit",
+    "cz": "oblek",
+    "level": 2
+  },
+  {
+    "en": "sweat-shirt",
+    "cz": "mikina",
+    "level": 1
+  },
+  {
+    "en": "sweater",
+    "cz": "svetr",
+    "level": 1
+  },
+  {
+    "en": "sweatshirt",
+    "cz": "mikina",
+    "level": 1
+  },
+  {
+    "en": "t-shirt",
+    "cz": "tričko",
+    "level": 1
+  },
+  {
+    "en": "tie",
+    "cz": "kravata",
+    "level": 3
+  },
+  {
+    "en": "trousers",
+    "cz": "kalhoty",
+    "level": 1
+  },
+  {
+    "en": "underclothes",
+    "cz": "spodní prádlo",
+    "level": 2
+  },
+  {
+    "en": "underpants",
+    "cz": "spodky",
+    "level": 1
+  },
+  {
+    "en": "undershirt",
+    "cz": "tílko",
+    "level": 3
+  },
+  {
+    "en": "vest",
+    "cz": "vesta",
+    "level": 3
+  }
+]
