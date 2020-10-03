@@ -1,0 +1,157 @@
+[
+  {
+    "en": "airport",
+    "cz": "letiště",
+    "level": 1
+  },
+  {
+    "en": "apartment building",
+    "cz": "obytný dům",
+    "level": 2
+  },
+  {
+    "en": "bakery",
+    "cz": "pekařství",
+    "level": 1
+  },
+  {
+    "en": "bank",
+    "cz": "banka",
+    "level": 1
+  },
+  {
+    "en": "barber shop",
+    "cz": "holič",
+    "level": 3
+  },
+  {
+    "en": "book store",
+    "cz": "knihkupectví",
+    "level": 2
+  },
+  {
+    "en": "bowling alley",
+    "cz": "bowling",
+    "level": 4
+  },
+  {
+    "en": "bus terminal",
+    "cz": "autobusové nádraží",
+    "level": 2
+  },
+  {
+    "en": "cafe",
+    "cz": "kavárna",
+    "level": 1
+  },
+  {
+    "en": "cathedral",
+    "cz": "katedrála",
+    "level": 2
+  },
+  {
+    "en": "church",
+    "cz": "kostel",
+    "level": 1
+  },
+  {
+    "en": "cinema",
+    "cz": "kino",
+    "level": 1
+  },
+  {
+    "en": "convenience store",
+    "cz": "Večerka",
+    "level": 3
+  },
+  {
+    "en": "department store",
+    "cz": "obchodní dům",
+    "level": 2
+  },
+  {
+    "en": "fire department",
+    "cz": "požární sbor",
+    "level": 2
+  },
+  {
+    "en": "gas station",
+    "cz": "čerpací stanice",
+    "level": 1
+  },
+  {
+    "en": "hospital",
+    "cz": "nemocnice",
+    "level": 1
+  },
+  {
+    "en": "house",
+    "cz": "Dům",
+    "level": 1
+  },
+  {
+    "en": "library",
+    "cz": "knihovna",
+    "level": 1
+  },
+  {
+    "en": "mosque",
+    "cz": "mešita",
+    "level": 3
+  },
+  {
+    "en": "movie theater",
+    "cz": "kino",
+    "level": 2
+  },
+  {
+    "en": "museum",
+    "cz": "muzeum",
+    "level": 1
+  },
+  {
+    "en": "office building",
+    "cz": "kancelářská budova",
+    "level": 2
+  },
+  {
+    "en": "post office",
+    "cz": "pošta",
+    "level": 2
+  },
+  {
+    "en": "restaurant",
+    "cz": "restaurace",
+    "level": 1
+  },
+  {
+    "en": "school building",
+    "cz": "školní budova",
+    "level": 1
+  },
+  {
+    "en": "shopping mall",
+    "cz": "obchodní dům",
+    "level": 2
+  },
+  {
+    "en": "shrine",
+    "cz": "svatyně",
+    "level": 3
+  },
+  {
+    "en": "supermarket",
+    "cz": "supermarket",
+    "level": 1
+  },
+  {
+    "en": "temple",
+    "cz": "chrám",
+    "level": 3
+  },
+  {
+    "en": "train station",
+    "cz": "vlakové nádraží",
+    "level": 2
+  }
+]

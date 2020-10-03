@@ -18,7 +18,9 @@ img_path = 'C:\\Users\\suche\\Documents\\GitHub\\suche.cz-minima\\assets\\img\\p
 start_words = {
 	'animals': None,
 	'clothes': None,
-	'body': "brain",
+	'body': None,
+	'buildings': None,
+	"sport": None,
 }
 
 

@@ -1,0 +1,152 @@
+[
+  {
+    "en": "athletics",
+    "cz": "atletika",
+    "level": 1
+  },
+  {
+    "en": "baseball",
+    "cz": "baseball",
+    "level": 1
+  },
+  {
+    "en": "basketball",
+    "cz": "Basketball",
+    "level": 1
+  },
+  {
+    "en": "bowling",
+    "cz": "kuželky",
+    "level": 2
+  },
+  {
+    "en": "car racing",
+    "cz": "závody aut",
+    "level": 2
+  },
+  {
+    "en": "cycling",
+    "cz": "cyklistika",
+    "level": 1
+  },
+  {
+    "en": "football",
+    "cz": "Fotbal",
+    "level": 1
+  },
+  {
+    "en": "golf",
+    "cz": "golf",
+    "level": 1
+  },
+  {
+    "en": "gymnastics",
+    "cz": "gymnastika",
+    "level": 1
+  },
+  {
+    "en": "handball",
+    "cz": "házená",
+    "level": 2
+  },
+  {
+    "en": "hang gliding",
+    "cz": "závěsné létání",
+    "level": 3
+  },
+  {
+    "en": "hockey",
+    "cz": "hokej",
+    "level": 1
+  },
+  {
+    "en": "horse racing",
+    "cz": "koňské dostihy",
+    "level": 2
+  },
+  {
+    "en": "jogging",
+    "cz": "běhání",
+    "level": 3
+  },
+  {
+    "en": "motorcycle racing",
+    "cz": "motocyklové závody",
+    "level": 1
+  },
+  {
+    "en": "para gliding",
+    "cz": "para klouzání",
+    "level": 3
+  },
+  {
+    "en": "polo",
+    "cz": "pólo",
+    "level": 1
+  },
+  {
+    "en": "rugby",
+    "cz": "ragby",
+    "level": 1
+  },
+  {
+    "en": "scuba diving",
+    "cz": "potápění",
+    "level": 3
+  },
+  {
+    "en": "skiing",
+    "cz": "lyžování",
+    "level": 2
+  },
+  {
+    "en": "skydiving",
+    "cz": "seskoky padákem",
+    "level": 3
+  },
+  {
+    "en": "snow-boarding",
+    "cz": "snowboarding",
+    "level": 1
+  },
+  {
+    "en": "soccer",
+    "cz": "fotbal",
+    "level": 3
+  },
+  {
+    "en": "softball",
+    "cz": "softball",
+    "level": 1
+  },
+  {
+    "en": "squash",
+    "cz": "squash",
+    "level": 1
+  },
+  {
+    "en": "swimming",
+    "cz": "plavání",
+    "level": 1
+  },
+  {
+    "en": "table tennis",
+    "cz": "stolní tenis",
+    "level": 1
+  },
+  {
+    "en": "tennis",
+    "cz": "tenis",
+    "level": 1
+  },
+  {
+    "en": "track and field",
+    "cz": "atletický",
+    "level": 3
+  },
+  {
+    "en": "volleyball",
+    "cz": "volejbal",
+    "level": 1
+  }
+]
